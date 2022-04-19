@@ -15,6 +15,8 @@
 		AD424AA2280DCD0B00555A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */; };
 		AD424AAB280DCD5900555A6E /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAA280DCD5900555A6E /* RegisterScreen.swift */; };
 		AD424AAF280DE33C00555A6E /* Textfield's.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAE280DE33C00555A6E /* Textfield's.swift */; };
+		AD424AB1280DEAF500555A6E /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AB0280DEAF500555A6E /* TitleLabel.swift */; };
+		ADFA6109280EEFD50008EBA7 /* NextButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA6108280EEFD50008EBA7 /* NextButtom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AD424AA3280DCD0B00555A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD424AAA280DCD5900555A6E /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		AD424AAE280DE33C00555A6E /* Textfield's.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield's.swift"; sourceTree = "<group>"; };
+		AD424AB0280DEAF500555A6E /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		ADFA6108280EEFD50008EBA7 /* NextButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,7 @@
 				AD424A9E280DCD0B00555A6E /* Assets.xcassets */,
 				AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */,
 				AD424AA3280DCD0B00555A6E /* Info.plist */,
-				AD424AAE280DE33C00555A6E /* Textfield's.swift */,
+				ADFA610A280EF7DC0008EBA7 /* Componentes */,
 			);
 			path = RegisterApp;
 			sourceTree = "<group>";
@@ -95,6 +99,16 @@
 				AD424A95280DCD0800555A6E /* AppDelegate.swift */,
 			);
 			path = "Delegate's";
+			sourceTree = "<group>";
+		};
+		ADFA610A280EF7DC0008EBA7 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				AD424AAE280DE33C00555A6E /* Textfield's.swift */,
+				AD424AB0280DEAF500555A6E /* TitleLabel.swift */,
+				ADFA6108280EEFD50008EBA7 /* NextButtom.swift */,
+			);
+			path = Componentes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD424AAB280DCD5900555A6E /* RegisterScreen.swift in Sources */,
+				ADFA6109280EEFD50008EBA7 /* NextButtom.swift in Sources */,
 				AD424A9A280DCD0800555A6E /* RegisterVC.swift in Sources */,
 				AD424AAF280DE33C00555A6E /* Textfield's.swift in Sources */,
+				AD424AB1280DEAF500555A6E /* TitleLabel.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */,
 			);
