@@ -16,6 +16,7 @@ class RegisterVC: UIViewController {
         self.registerScreen = RegisterScreen()
         self.view = self.registerScreen
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }

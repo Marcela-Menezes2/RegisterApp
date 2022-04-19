@@ -7,7 +7,18 @@
 
 import UIKit
 
+protocol RegisterScreenProtocol: AnyObject {
+    func actionNextButton()
+}
+
 class NextButton: UIButton {
+    
+    private weak var delegate: RegisterScreenProtocol?
+     
+     func delegate(delegate: RegisterScreenProtocol?) {
+         self.delegate = delegate
+     }
+
     init(setTitle: String){
         super.init(frame: .zero)
         initDefault(setTitle: setTitle)
@@ -20,8 +31,14 @@ class NextButton: UIButton {
         self.setTitleColor(.white, for: UIControl.State.normal)
         self.clipsToBounds = true
         self.layer.cornerRadius = 7.5
-        self.backgroundColor = .systemGreen
+        self.backgroundColor = .gray
+        self.addTarget(self, action: #selector(self.tappedNextButton), for: .touchUpInside)
    }
+    
+    @objc private func tappedNextButton(){
+        self.delegate?.actionNextButton()
+        print("Deu certo")
+    }
 
     
     required init?(coder: NSCoder) {

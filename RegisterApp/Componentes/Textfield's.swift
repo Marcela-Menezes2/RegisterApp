@@ -26,6 +26,7 @@ class TextFieldDefault: UITextField {
         self.placeholder = placeholder
         self.translatesAutoresizingMaskIntoConstraints = false
         self.keyboardType = UIKeyboardType.emailAddress
+        self.backgroundColor = .gray
         self.layer.cornerRadius = 7.5
         self.layer.borderColor = UIColor.white.cgColor
         self.layer.borderWidth = 1

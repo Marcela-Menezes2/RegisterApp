@@ -15,8 +15,8 @@
            
             private func initDefault(titleLabel: String) {
                self.translatesAutoresizingMaskIntoConstraints = false
-               self.textColor = .white
-               self.font = UIFont.systemFont(ofSize: 40)
+               self.textColor = .black
+               self.font = UIFont.systemFont(ofSize: 60)
                self.text = "Register"
                 
            }
@@ -36,7 +36,7 @@
            
             private func initDefault(subLabel: String) {
                self.translatesAutoresizingMaskIntoConstraints = false
-               self.textColor = .white
+               self.textColor = .black
                self.font = UIFont.systemFont(ofSize: 20)
                self.text = "Login data"
                 

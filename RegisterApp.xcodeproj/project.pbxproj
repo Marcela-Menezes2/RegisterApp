@@ -17,6 +17,8 @@
 		AD424AAF280DE33C00555A6E /* Textfield's.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAE280DE33C00555A6E /* Textfield's.swift */; };
 		AD424AB1280DEAF500555A6E /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AB0280DEAF500555A6E /* TitleLabel.swift */; };
 		ADFA6109280EEFD50008EBA7 /* NextButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA6108280EEFD50008EBA7 /* NextButtom.swift */; };
+		ADFA610C280F3DF90008EBA7 /* DadosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610B280F3DF90008EBA7 /* DadosVC.swift */; };
+		ADFA610E280F3E100008EBA7 /* DadosScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610D280F3E100008EBA7 /* DadosScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AD424AAE280DE33C00555A6E /* Textfield's.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield's.swift"; sourceTree = "<group>"; };
 		AD424AB0280DEAF500555A6E /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		ADFA6108280EEFD50008EBA7 /* NextButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtom.swift; sourceTree = "<group>"; };
+		ADFA610B280F3DF90008EBA7 /* DadosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosVC.swift; sourceTree = "<group>"; };
+		ADFA610D280F3E100008EBA7 /* DadosScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				AD424AAA280DCD5900555A6E /* RegisterScreen.swift */,
+				ADFA610D280F3E100008EBA7 /* DadosScreen.swift */,
 			);
 			path = "Screen's";
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				AD424A99280DCD0800555A6E /* RegisterVC.swift */,
+				ADFA610B280F3DF90008EBA7 /* DadosVC.swift */,
 			);
 			path = "VC'S";
 			sourceTree = "<group>";
@@ -184,8 +190,10 @@
 			files = (
 				AD424AAB280DCD5900555A6E /* RegisterScreen.swift in Sources */,
 				ADFA6109280EEFD50008EBA7 /* NextButtom.swift in Sources */,
+				ADFA610E280F3E100008EBA7 /* DadosScreen.swift in Sources */,
 				AD424A9A280DCD0800555A6E /* RegisterVC.swift in Sources */,
 				AD424AAF280DE33C00555A6E /* Textfield's.swift in Sources */,
+				ADFA610C280F3DF90008EBA7 /* DadosVC.swift in Sources */,
 				AD424AB1280DEAF500555A6E /* TitleLabel.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */,

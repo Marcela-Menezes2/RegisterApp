@@ -18,7 +18,7 @@ class RegisterScreen: UIView {
        
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .gray
+        backgroundColor = .white
         addSubView()
         setConstraints()
     }
@@ -42,32 +42,31 @@ class RegisterScreen: UIView {
             NSLayoutConstraint.activate([
     
     
-                titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
-                titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
+                titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 81),
+                titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
                 
-                subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 20),
+                subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
                 subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor),
     
                usernameTextField.topAnchor.constraint(equalTo: self.subTitleLabel.bottomAnchor, constant: 50),
-                usernameTextField.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
-                usernameTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
-                usernameTextField.heightAnchor.constraint(equalToConstant: 45),
+                usernameTextField.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
+                usernameTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -35),
+                usernameTextField.heightAnchor.constraint(equalToConstant: 52),
                 
                 emailTextField.topAnchor.constraint(equalTo: self.usernameTextField.bottomAnchor, constant: 30),
                 emailTextField.leftAnchor.constraint(equalTo: self.usernameTextField.leftAnchor),
                 emailTextField.trailingAnchor.constraint(equalTo: self.usernameTextField.trailingAnchor),
-                emailTextField.heightAnchor.constraint(equalToConstant: 45),
+                emailTextField.heightAnchor.constraint(equalToConstant: 52),
                 
                 passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 30),
                 passwordTextField.leftAnchor.constraint(equalTo: self.emailTextField.leftAnchor),
                 passwordTextField.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-                passwordTextField.heightAnchor.constraint(equalToConstant: 45),
+                passwordTextField.heightAnchor.constraint(equalToConstant: 52),
     
                 nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -40),
                 nextButton.leftAnchor.constraint(equalTo: self.passwordTextField.leftAnchor),
                 nextButton.trailingAnchor.constraint(equalTo: self.passwordTextField.trailingAnchor),
-                nextButton.heightAnchor.constraint(equalToConstant: 45),
-             //   nextButton.widthAnchor.constraint(equalToConstant: 450)
+                nextButton.heightAnchor.constraint(equalToConstant: 46),
     
                 
             ])
@@ -78,79 +77,4 @@ class RegisterScreen: UIView {
     
     
 
-  
-//lazy var titleLabel: UILabel = {
-//   let label = UILabel()
-//    label.translatesAutoresizingMaskIntoConstraints = false
-//    label.textColor = .white
-//    label.font = UIFont.systemFont(ofSize: 40)
-//    label.text = "Register"
-//    return label
-//}()
-//
-//lazy var subtitleLabel: UILabel = {
-//   let label = UILabel()
-//    label.translatesAutoresizingMaskIntoConstraints = false
-//    label.textColor = .white
-//    label.font = UIFont.systemFont(ofSize: 20)
-//    label.text = "Dados de Login"
-//    return label
-//}()
-//
-//lazy var nomeTextField: UITextField = {
-//    let textField = UITextField()
-//    textField.translatesAutoresizingMaskIntoConstraints = false
-//    textField.placeholder = " Username "
-//    textField.layer.cornerRadius = 7.5
-//    textField.borderStyle = .roundedRect
-//    textField.autocorrectionType = .no
-//    textField.backgroundColor = .white
-//    textField.layer.borderColor = UIColor.white.cgColor
-//    textField.layer.borderWidth = 1
-//    textField.textColor = .darkGray
-//    return textField
-//}()
-//
-//
-//lazy var emailTextField: UITextField = {
-//    let textField = UITextField()
-//    textField.translatesAutoresizingMaskIntoConstraints = false
-//    textField.autocorrectionType = .no
-//    textField.backgroundColor = .white
-//    textField.borderStyle = .roundedRect
-//    textField.keyboardType = .emailAddress
-//    textField.layer.cornerRadius = 7.5
-//    textField.placeholder = " Email "
-//    textField.layer.borderWidth = 1
-//    textField.textColor = .darkGray
-//    return textField
-//}()
-//
-//lazy var passwordTextField: UITextField = {
-//    let textField = UITextField()
-//    textField.translatesAutoresizingMaskIntoConstraints = false
-//    textField.autocorrectionType = .no
-//    textField.backgroundColor = .white
-//    textField.borderStyle = .roundedRect
-//    textField.keyboardType = .default
-//    textField.isSecureTextEntry = true
-//    textField.layer.cornerRadius = 7.5
-//    textField.placeholder = " Password "
-//    textField.layer.borderWidth = 1
-//    textField.textColor = .darkGray
-//    return textField
-//}()
-//
-//lazy var  nextButton: UIButton = {
-//    let button = UIButton()
-//    button.translatesAutoresizingMaskIntoConstraints = false
-//    button.setTitle(" Next ", for: .normal)
-//    button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-//    button.setTitleColor(.white, for: UIControl.State.normal)
-//    button.clipsToBounds = true
-//    button.layer.cornerRadius = 7.5
-//    button.backgroundColor = .systemGreen
-////     button.addTarget(self, action: #selector(self.tappedLoginButton), for: .touchUpInside)
-//    return button
-//}()
-//
+ 
