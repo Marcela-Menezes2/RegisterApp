@@ -9,33 +9,42 @@
 /* Begin PBXBuildFile section */
 		AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A95280DCD0800555A6E /* AppDelegate.swift */; };
 		AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A97280DCD0800555A6E /* SceneDelegate.swift */; };
-		AD424A9A280DCD0800555A6E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A99280DCD0800555A6E /* RegisterVC.swift */; };
+		AD424A9A280DCD0800555A6E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A99280DCD0800555A6E /* RegisterViewController.swift */; };
 		AD424A9D280DCD0800555A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD424A9B280DCD0800555A6E /* Main.storyboard */; };
 		AD424A9F280DCD0B00555A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD424A9E280DCD0B00555A6E /* Assets.xcassets */; };
 		AD424AA2280DCD0B00555A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */; };
-		AD424AAB280DCD5900555A6E /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAA280DCD5900555A6E /* RegisterScreen.swift */; };
-		AD424AAF280DE33C00555A6E /* Textfield's.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAE280DE33C00555A6E /* Textfield's.swift */; };
-		AD424AB1280DEAF500555A6E /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AB0280DEAF500555A6E /* TitleLabel.swift */; };
-		ADFA6109280EEFD50008EBA7 /* NextButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA6108280EEFD50008EBA7 /* NextButtom.swift */; };
-		ADFA610C280F3DF90008EBA7 /* DadosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610B280F3DF90008EBA7 /* DadosVC.swift */; };
-		ADFA610E280F3E100008EBA7 /* DadosScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610D280F3E100008EBA7 /* DadosScreen.swift */; };
+		AD424AAB280DCD5900555A6E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAA280DCD5900555A6E /* RegisterView.swift */; };
+		AD424AAF280DE33C00555A6E /* TextfieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AAE280DE33C00555A6E /* TextfieldDefault.swift */; };
+		AD424AB1280DEAF500555A6E /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424AB0280DEAF500555A6E /* LabelDefault.swift */; };
+		ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */; };
+		ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */; };
+		ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */; };
+		ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5C628106CCA00F3BDFA /* RegisterViewConstraints.swift */; };
+		ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CB2810754700F3BDFA /* Coordinator.swift */; };
+		ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */; };
+		ADFED5D028107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CF28107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift */; };
+		ADFED5D32810877100F3BDFA /* UIViewCanvas in Frameworks */ = {isa = PBXBuildFile; productRef = ADFED5D22810877100F3BDFA /* UIViewCanvas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD424A92280DCD0800555A6E /* RegisterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD424A95280DCD0800555A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD424A97280DCD0800555A6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD424A99280DCD0800555A6E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		AD424A99280DCD0800555A6E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AD424A9C280DCD0800555A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD424A9E280DCD0B00555A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD424AA1280DCD0B00555A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD424AA3280DCD0B00555A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD424AAA280DCD5900555A6E /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
-		AD424AAE280DE33C00555A6E /* Textfield's.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield's.swift"; sourceTree = "<group>"; };
-		AD424AB0280DEAF500555A6E /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
-		ADFA6108280EEFD50008EBA7 /* NextButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtom.swift; sourceTree = "<group>"; };
-		ADFA610B280F3DF90008EBA7 /* DadosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosVC.swift; sourceTree = "<group>"; };
-		ADFA610D280F3E100008EBA7 /* DadosScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosScreen.swift; sourceTree = "<group>"; };
+		AD424AAA280DCD5900555A6E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		AD424AAE280DE33C00555A6E /* TextfieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldDefault.swift; sourceTree = "<group>"; };
+		AD424AB0280DEAF500555A6E /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomDefault.swift; sourceTree = "<group>"; };
+		ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
+		ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
+		ADFED5C628106CCA00F3BDFA /* RegisterViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewConstraints.swift; sourceTree = "<group>"; };
+		ADFED5CB2810754700F3BDFA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		ADFED5CF28107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPersonalDataCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFED5D32810877100F3BDFA /* UIViewCanvas in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +78,11 @@
 		AD424A94280DCD0800555A6E /* RegisterApp */ = {
 			isa = PBXGroup;
 			children = (
+				ADFED5D428108EB500F3BDFA /* PersonalData */,
+				ADFED5C9281074DD00F3BDFA /* Source */,
 				AD424AAD280DCE7C00555A6E /* Delegate's */,
-				AD424AAC280DCE4700555A6E /* VC'S */,
-				AD424AA9280DCD4200555A6E /* Screen's */,
+				AD424AAC280DCE4700555A6E /* ViewControllers */,
+				AD424AA9280DCD4200555A6E /* Register */,
 				AD424A9B280DCD0800555A6E /* Main.storyboard */,
 				AD424A9E280DCD0B00555A6E /* Assets.xcassets */,
 				AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */,
@@ -80,22 +92,21 @@
 			path = RegisterApp;
 			sourceTree = "<group>";
 		};
-		AD424AA9280DCD4200555A6E /* Screen's */ = {
+		AD424AA9280DCD4200555A6E /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				AD424AAA280DCD5900555A6E /* RegisterScreen.swift */,
-				ADFA610D280F3E100008EBA7 /* DadosScreen.swift */,
+				AD424AAA280DCD5900555A6E /* RegisterView.swift */,
+				ADFED5C628106CCA00F3BDFA /* RegisterViewConstraints.swift */,
 			);
-			path = "Screen's";
+			path = Register;
 			sourceTree = "<group>";
 		};
-		AD424AAC280DCE4700555A6E /* VC'S */ = {
+		AD424AAC280DCE4700555A6E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD424A99280DCD0800555A6E /* RegisterVC.swift */,
-				ADFA610B280F3DF90008EBA7 /* DadosVC.swift */,
+				ADFED5C82810710100F3BDFA /* Register */,
 			);
-			path = "VC'S";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AD424AAD280DCE7C00555A6E /* Delegate's */ = {
@@ -110,11 +121,62 @@
 		ADFA610A280EF7DC0008EBA7 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
-				AD424AAE280DE33C00555A6E /* Textfield's.swift */,
-				AD424AB0280DEAF500555A6E /* TitleLabel.swift */,
-				ADFA6108280EEFD50008EBA7 /* NextButtom.swift */,
+				AD424AAE280DE33C00555A6E /* TextfieldDefault.swift */,
+				AD424AB0280DEAF500555A6E /* LabelDefault.swift */,
+				ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */,
 			);
 			path = Componentes;
+			sourceTree = "<group>";
+		};
+		ADFED5C82810710100F3BDFA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				AD424A99280DCD0800555A6E /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		ADFED5C9281074DD00F3BDFA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ADFED5CA281074F600F3BDFA /* coordinator */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ADFED5CA281074F600F3BDFA /* coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ADFED5CB2810754700F3BDFA /* Coordinator.swift */,
+				ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */,
+				ADFED5CF28107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift */,
+			);
+			path = coordinator;
+			sourceTree = "<group>";
+		};
+		ADFED5D428108EB500F3BDFA /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				ADFED5D628108F6300F3BDFA /* PersonalDataView */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		ADFED5D628108F6300F3BDFA /* PersonalDataView */ = {
+			isa = PBXGroup;
+			children = (
+				ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */,
+				ADFED5D728108F7C00F3BDFA /* PersonalDataVC */,
+			);
+			path = PersonalDataView;
+			sourceTree = "<group>";
+		};
+		ADFED5D728108F7C00F3BDFA /* PersonalDataVC */ = {
+			isa = PBXGroup;
+			children = (
+				ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */,
+			);
+			path = PersonalDataVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +195,9 @@
 			dependencies = (
 			);
 			name = RegisterApp;
+			packageProductDependencies = (
+				ADFED5D22810877100F3BDFA /* UIViewCanvas */,
+			);
 			productName = RegisterApp;
 			productReference = AD424A92280DCD0800555A6E /* RegisterApp.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +226,9 @@
 				Base,
 			);
 			mainGroup = AD424A89280DCD0800555A6E;
+			packageReferences = (
+				ADFED5D12810877100F3BDFA /* XCRemoteSwiftPackageReference "UIViewCanvas" */,
+			);
 			productRefGroup = AD424A93280DCD0800555A6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,13 +256,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD424AAB280DCD5900555A6E /* RegisterScreen.swift in Sources */,
-				ADFA6109280EEFD50008EBA7 /* NextButtom.swift in Sources */,
-				ADFA610E280F3E100008EBA7 /* DadosScreen.swift in Sources */,
-				AD424A9A280DCD0800555A6E /* RegisterVC.swift in Sources */,
-				AD424AAF280DE33C00555A6E /* Textfield's.swift in Sources */,
-				ADFA610C280F3DF90008EBA7 /* DadosVC.swift in Sources */,
-				AD424AB1280DEAF500555A6E /* TitleLabel.swift in Sources */,
+				AD424AAB280DCD5900555A6E /* RegisterView.swift in Sources */,
+				ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */,
+				ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */,
+				AD424A9A280DCD0800555A6E /* RegisterViewController.swift in Sources */,
+				AD424AAF280DE33C00555A6E /* TextfieldDefault.swift in Sources */,
+				ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */,
+				ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */,
+				ADFED5D028107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift in Sources */,
+				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
+				ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */,
+				AD424AB1280DEAF500555A6E /* LabelDefault.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */,
 			);
@@ -416,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADFED5D12810877100F3BDFA /* XCRemoteSwiftPackageReference "UIViewCanvas" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/outrowender/UIViewCanvas";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADFED5D22810877100F3BDFA /* UIViewCanvas */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADFED5D12810877100F3BDFA /* XCRemoteSwiftPackageReference "UIViewCanvas" */;
+			productName = UIViewCanvas;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD424A8A280DCD0800555A6E /* Project object */;
 }

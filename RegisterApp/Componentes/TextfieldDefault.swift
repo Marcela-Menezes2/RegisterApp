@@ -27,7 +27,7 @@ class TextFieldDefault: UITextField {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.keyboardType = UIKeyboardType.emailAddress
         self.backgroundColor = .gray
-        self.layer.cornerRadius = 7.5
+        self.layer.cornerRadius = 10
         self.layer.borderColor = UIColor.white.cgColor
         self.layer.borderWidth = 1
         setUpConstraints()
