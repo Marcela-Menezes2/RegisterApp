@@ -27,6 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let coordinator = RegisterCoordinator(navigationController: navigationController)
         coordinator.start()
+       
         
    //     let window = UIWindow(windowScene: windowScene)
 //       let vc: RegisterViewController = RegisterViewController()

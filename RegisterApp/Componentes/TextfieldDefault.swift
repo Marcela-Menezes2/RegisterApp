@@ -21,7 +21,6 @@ class TextFieldDefault: UITextField {
         self.isSecureTextEntry = isSecureTextEntry
     }
     
-    
     private func initDefault(placeholder: String) {
         self.placeholder = placeholder
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +30,6 @@ class TextFieldDefault: UITextField {
         self.layer.borderColor = UIColor.white.cgColor
         self.layer.borderWidth = 1
         setUpConstraints()
-        
     }
     
     func setUpConstraints() {

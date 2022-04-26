@@ -21,7 +21,7 @@
             self.addSubview(titleLabel)
             
             NSLayoutConstraint.activate([
-                titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+                titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
                 titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
             ])
         }

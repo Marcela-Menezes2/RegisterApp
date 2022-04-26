@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD03D7652814694C0079E249 /* PersonalDataConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD03D7642814694C0079E249 /* PersonalDataConstraints.swift */; };
+		AD03D7682814747F0079E249 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD03D7672814747F0079E249 /* AddressView.swift */; };
+		AD03D76B281475540079E249 /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD03D76A281475540079E249 /* AddressVC.swift */; };
+		AD3797392816C4BB004420E3 /* AddressConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3797382816C4BB004420E3 /* AddressConstraints.swift */; };
+		AD37973F2816E38E004420E3 /* ReviewDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37973E2816E38E004420E3 /* ReviewDataView.swift */; };
+		AD3797412816E471004420E3 /* ReviewDataConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3797402816E471004420E3 /* ReviewDataConstraints.swift */; };
+		AD3797442816E4F0004420E3 /* ReviewDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3797432816E4F0004420E3 /* ReviewDataVC.swift */; };
+		AD379748281703C0004420E3 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD379747281703C0004420E3 /* States.swift */; };
 		AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A95280DCD0800555A6E /* AppDelegate.swift */; };
 		AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A97280DCD0800555A6E /* SceneDelegate.swift */; };
 		AD424A9A280DCD0800555A6E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424A99280DCD0800555A6E /* RegisterViewController.swift */; };
@@ -22,11 +30,19 @@
 		ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5C628106CCA00F3BDFA /* RegisterViewConstraints.swift */; };
 		ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CB2810754700F3BDFA /* Coordinator.swift */; };
 		ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */; };
-		ADFED5D028107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CF28107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift */; };
+		ADFED5D028107B6500F3BDFA /* AddressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFED5CF28107B6500F3BDFA /* AddressCoordinator.swift */; };
 		ADFED5D32810877100F3BDFA /* UIViewCanvas in Frameworks */ = {isa = PBXBuildFile; productRef = ADFED5D22810877100F3BDFA /* UIViewCanvas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD03D7642814694C0079E249 /* PersonalDataConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataConstraints.swift; sourceTree = "<group>"; };
+		AD03D7672814747F0079E249 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		AD03D76A281475540079E249 /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
+		AD3797382816C4BB004420E3 /* AddressConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressConstraints.swift; sourceTree = "<group>"; };
+		AD37973E2816E38E004420E3 /* ReviewDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataView.swift; sourceTree = "<group>"; };
+		AD3797402816E471004420E3 /* ReviewDataConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataConstraints.swift; sourceTree = "<group>"; };
+		AD3797432816E4F0004420E3 /* ReviewDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataVC.swift; sourceTree = "<group>"; };
+		AD379747281703C0004420E3 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		AD424A92280DCD0800555A6E /* RegisterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD424A95280DCD0800555A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD424A97280DCD0800555A6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +60,7 @@
 		ADFED5C628106CCA00F3BDFA /* RegisterViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewConstraints.swift; sourceTree = "<group>"; };
 		ADFED5CB2810754700F3BDFA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
-		ADFED5CF28107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPersonalDataCoordinator.swift; sourceTree = "<group>"; };
+		ADFED5CF28107B6500F3BDFA /* AddressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD03D7662814742B0079E249 /* Address's */ = {
+			isa = PBXGroup;
+			children = (
+				AD3797462816ED44004420E3 /* AddressView */,
+			);
+			path = "Address's";
+			sourceTree = "<group>";
+		};
+		AD3797362816C41B004420E3 /* PersonalDataVC */ = {
+			isa = PBXGroup;
+			children = (
+				ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */,
+			);
+			path = PersonalDataVC;
+			sourceTree = "<group>";
+		};
+		AD3797372816C448004420E3 /* AddressVewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D76A281475540079E249 /* AddressVC.swift */,
+			);
+			path = AddressVewController;
+			sourceTree = "<group>";
+		};
+		AD37973D2816E369004420E3 /* ReviewData */ = {
+			isa = PBXGroup;
+			children = (
+				AD3797452816ED2C004420E3 /* ReviewDataView */,
+			);
+			path = ReviewData;
+			sourceTree = "<group>";
+		};
+		AD3797422816E4D3004420E3 /* ReviewDataVC */ = {
+			isa = PBXGroup;
+			children = (
+				AD3797432816E4F0004420E3 /* ReviewDataVC.swift */,
+			);
+			path = ReviewDataVC;
+			sourceTree = "<group>";
+		};
+		AD3797452816ED2C004420E3 /* ReviewDataView */ = {
+			isa = PBXGroup;
+			children = (
+				AD37973E2816E38E004420E3 /* ReviewDataView.swift */,
+				AD3797402816E471004420E3 /* ReviewDataConstraints.swift */,
+			);
+			path = ReviewDataView;
+			sourceTree = "<group>";
+		};
+		AD3797462816ED44004420E3 /* AddressView */ = {
+			isa = PBXGroup;
+			children = (
+				AD03D7672814747F0079E249 /* AddressView.swift */,
+				AD3797382816C4BB004420E3 /* AddressConstraints.swift */,
+				AD379747281703C0004420E3 /* States.swift */,
+			);
+			path = AddressView;
+			sourceTree = "<group>";
+		};
 		AD424A89280DCD0800555A6E = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +153,13 @@
 		AD424A94280DCD0800555A6E /* RegisterApp */ = {
 			isa = PBXGroup;
 			children = (
-				ADFED5D428108EB500F3BDFA /* PersonalData */,
-				ADFED5C9281074DD00F3BDFA /* Source */,
 				AD424AAD280DCE7C00555A6E /* Delegate's */,
-				AD424AAC280DCE4700555A6E /* ViewControllers */,
 				AD424AA9280DCD4200555A6E /* Register */,
+				ADFED5D428108EB500F3BDFA /* PersonalData */,
+				AD03D7662814742B0079E249 /* Address's */,
+				AD37973D2816E369004420E3 /* ReviewData */,
+				ADFED5C9281074DD00F3BDFA /* Source */,
+				AD424AAC280DCE4700555A6E /* ViewControllers */,
 				AD424A9B280DCD0800555A6E /* Main.storyboard */,
 				AD424A9E280DCD0B00555A6E /* Assets.xcassets */,
 				AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */,
@@ -104,6 +181,9 @@
 		AD424AAC280DCE4700555A6E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD3797422816E4D3004420E3 /* ReviewDataVC */,
+				AD3797372816C448004420E3 /* AddressVewController */,
+				AD3797362816C41B004420E3 /* PersonalDataVC */,
 				ADFED5C82810710100F3BDFA /* Register */,
 			);
 			path = ViewControllers;
@@ -149,7 +229,7 @@
 			children = (
 				ADFED5CB2810754700F3BDFA /* Coordinator.swift */,
 				ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */,
-				ADFED5CF28107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift */,
+				ADFED5CF28107B6500F3BDFA /* AddressCoordinator.swift */,
 			);
 			path = coordinator;
 			sourceTree = "<group>";
@@ -166,17 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */,
-				ADFED5D728108F7C00F3BDFA /* PersonalDataVC */,
+				AD03D7642814694C0079E249 /* PersonalDataConstraints.swift */,
 			);
 			path = PersonalDataView;
-			sourceTree = "<group>";
-		};
-		ADFED5D728108F7C00F3BDFA /* PersonalDataVC */ = {
-			isa = PBXGroup;
-			children = (
-				ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */,
-			);
-			path = PersonalDataVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,15 +330,23 @@
 			files = (
 				AD424AAB280DCD5900555A6E /* RegisterView.swift in Sources */,
 				ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */,
+				AD3797412816E471004420E3 /* ReviewDataConstraints.swift in Sources */,
+				AD03D76B281475540079E249 /* AddressVC.swift in Sources */,
 				ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */,
+				AD03D7652814694C0079E249 /* PersonalDataConstraints.swift in Sources */,
 				AD424A9A280DCD0800555A6E /* RegisterViewController.swift in Sources */,
 				AD424AAF280DE33C00555A6E /* TextfieldDefault.swift in Sources */,
 				ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */,
+				AD379748281703C0004420E3 /* States.swift in Sources */,
+				AD37973F2816E38E004420E3 /* ReviewDataView.swift in Sources */,
+				AD3797442816E4F0004420E3 /* ReviewDataVC.swift in Sources */,
 				ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */,
-				ADFED5D028107B6500F3BDFA /* RegisterPersonalDataCoordinator.swift in Sources */,
+				ADFED5D028107B6500F3BDFA /* AddressCoordinator.swift in Sources */,
+				AD3797392816C4BB004420E3 /* AddressConstraints.swift in Sources */,
 				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
 				ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */,
 				AD424AB1280DEAF500555A6E /* LabelDefault.swift in Sources */,
+				AD03D7682814747F0079E249 /* AddressView.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */,
 			);
