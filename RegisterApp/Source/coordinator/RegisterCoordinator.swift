@@ -18,11 +18,26 @@ class RegisterCoordinator: Coordinator {
     func start() {
         let viewController = RegisterViewController()
         
-        self.navigationController.pushViewController(viewController, animated: true)
-        viewController.onNextTap = {
-        //    print("Voltei")
-            let dados = PersonalDataVC()
-            self.navigationController.pushViewController(dados, animated: false)
+            viewController.onNextTap = {
+                self.nextView()
+            }
+            
+            self.navigationController.pushViewController(viewController, animated: true)
+        }
+        
+        private func nextView() {
+            let coordinator = PersonalDataCoordinator(navigationController: self.navigationController)
+            coordinator.start()
         }
     }
-}
+
+
+        
+//        self.navigationController.pushViewController(viewController, animated: true)
+//        viewController.onNextTap = {
+//        //    print("Voltei")
+//            let dados = PersonalDataVC()
+//            self.navigationController.pushViewController(dados, animated: false)
+//        }
+//    }
+//}

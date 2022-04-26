@@ -25,8 +25,8 @@ class RegisterViewController: UIViewController {
         self.view = self.registerView
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 }
 

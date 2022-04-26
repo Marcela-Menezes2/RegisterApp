@@ -25,8 +25,8 @@ class AddressViewController: UIViewController {
         self.view = self.addressView
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 }
 

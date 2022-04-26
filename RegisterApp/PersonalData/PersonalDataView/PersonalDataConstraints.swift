@@ -20,13 +20,14 @@ extension PersonalDataView {
         setCpfTextField()
         setTelefoneLabel()
         setTelefoneTextField()
+//        setLogoImage()
         setNextButton()
     }
     
     private func setTitle() {
         self.addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
+            titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
         ])
     }
@@ -48,12 +49,12 @@ extension PersonalDataView {
     }
     
     private func setIdadeButton() {
-        self.addSubview(idadeButton)
+        self.addSubview(ageTextField)
         NSLayoutConstraint.activate([
-            idadeButton.topAnchor.constraint(equalTo: self.subTitleLabel.bottomAnchor, constant: 35),
-            idadeButton.leftAnchor.constraint(equalTo: self.idadeLabel.leftAnchor, constant: 60),
-            idadeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
-            idadeButton.heightAnchor.constraint(equalToConstant: 42)
+            ageTextField.topAnchor.constraint(equalTo: self.subTitleLabel.bottomAnchor, constant: 35),
+            ageTextField.leftAnchor.constraint(equalTo: self.idadeLabel.leftAnchor, constant: 60),
+            ageTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -10),
+            ageTextField.heightAnchor.constraint(equalToConstant: 42)
         ])
     }
     
@@ -68,7 +69,7 @@ extension PersonalDataView {
     private func setGeneroButton() {
         self.addSubview(generoButton)
         NSLayoutConstraint.activate([
-            generoButton.topAnchor.constraint(equalTo: self.idadeButton.bottomAnchor, constant: 35),
+            generoButton.topAnchor.constraint(equalTo: self.ageTextField.bottomAnchor, constant: 35),
             generoButton.leftAnchor.constraint(equalTo: self.dadosLabel.leftAnchor, constant: 70),
             generoButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             generoButton.heightAnchor.constraint(equalToConstant: 42)
@@ -117,9 +118,18 @@ extension PersonalDataView {
             nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -40),
             nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
             nextButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
-            nextButton.heightAnchor.constraint(equalToConstant: 46)
+            nextButton.heightAnchor.constraint(equalToConstant: 46),
         ])
     }
+    
+//    private func setLogoImage() {
+//        self.addSubview(logoImage)
+//        NSLayoutConstraint.activate([
+//            logoImage.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+//            logoImage.leftAnchor.constraint(equalTo: self.leftAnchor),
+//            logoImage.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            logoImage.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -2),
+//        ])
+//}
+
 }
-
-

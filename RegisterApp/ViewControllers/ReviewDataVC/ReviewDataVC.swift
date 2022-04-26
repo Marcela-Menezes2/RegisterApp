@@ -25,7 +25,7 @@ class ReviewDataVC: UIViewController {
         self.view = self.reviewDataView
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 }

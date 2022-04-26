@@ -10,19 +10,48 @@ import UIKit
 class AddressCoordinator: Coordinator {
     var navigationController: UINavigationController
     
-    init(navigationController: UINavigationController) {
+    init (navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     func start() {
-        let viewController = PersonalDataVC()
+        let viewController = AddressViewController()
         
-        self.navigationController.pushViewController(viewController, animated: true)
-        viewController.onNextTap = {
-            print("Voltei")
-            let detalhes = AddressViewController()
-            self.navigationController.pushViewController(detalhes, animated: false)
+            viewController.onNextTap = {
+                self.nextView()
+            }
+            
+            self.navigationController.pushViewController(viewController, animated: true)
+        }
+        
+        private func nextView() {
+            let coordinator = ReviewCoordinator(navigationController: self.navigationController)
+            coordinator.start()
         }
     }
-}
- 
+
+// 
+//import UIKit
+//
+//class RegisterCoordinator: Coordinator {
+//    var navigationController: UINavigationController
+//    
+//    init (navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
+//
+//    func start() {
+//        let viewController = RegisterViewController()
+//        
+//            viewController.onNextTap = {
+//                self.nextView()
+//            }
+//            
+//            self.navigationController.pushViewController(viewController, animated: true)
+//        }
+//        
+//        private func nextView() {
+//            let coordinator = AddressCoordinator(navigationController: self.navigationController)
+//            coordinator.start()
+//        }
+//    }

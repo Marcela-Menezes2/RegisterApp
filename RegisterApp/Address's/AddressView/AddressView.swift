@@ -69,13 +69,13 @@ class AddressView: UIView {
     }
     
 }
-
-import SwiftUI
-import UIViewCanvas
-
-struct MyPreview: PreviewProvider {
-    static var previews: some View {
-        ViewCanvas(for: AddressView())
-    }
-}
-
+//
+//import SwiftUI
+//import UIViewCanvas
+//
+//struct MyPreview: PreviewProvider {
+//    static var previews: some View {
+//        ViewCanvas(for: AddressView())
+//    }
+//}
+//

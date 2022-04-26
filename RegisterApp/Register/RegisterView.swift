@@ -11,7 +11,7 @@ class RegisterView: UIView {
     
     // MARK: Closures
     var onNextTap: (() -> Void)?
-    
+    var onPasswordWrong: (()->Void)?
     
     lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: "Login data ")
@@ -30,7 +30,9 @@ class RegisterView: UIView {
         backgroundColor = .white
         
         self.setUIElements()
+        self.setupTextFields()
     }
+
     
     @objc private func nextButtonTap() {
         onNextTap?()
@@ -40,4 +42,3 @@ class RegisterView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
-

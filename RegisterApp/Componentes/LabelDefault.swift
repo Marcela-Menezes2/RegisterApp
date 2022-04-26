@@ -226,3 +226,18 @@ class DadosLabel: UILabel {
     }
     
 }
+
+class LogoImage: UIImageView {
+    init(logoImage: String){
+        super.init(frame: .zero)
+        initDefault(logoImage: logoImage)
+    }
+    private func initDefault(logoImage: String) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.image = UIImage(named: "verde")
+        
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

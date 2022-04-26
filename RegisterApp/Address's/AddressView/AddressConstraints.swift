@@ -30,7 +30,7 @@ extension AddressView {
         self.addSubview(titleLabel)
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 60),
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
             titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
         ])
     }
