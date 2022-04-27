@@ -12,12 +12,19 @@ extension PersonalDataView: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if textField == cpfTextField {
             
-            //MARK:- If Delete button click
-           
-            
             if (textField.text?.count ?? 0) < 14 {
                 textField.layer.borderColor = UIColor.red.cgColor
             } else if textField.text?.isValidCPF ?? false {
+              textField.layer.borderColor = UIColor.textFieldBorderColor
+            }
+            
+            textField.text = String(textField.text!.prefix(14))
+        }
+        if textField == telefoneTextField {
+            
+            if (textField.text?.count ?? 0) < 14 {
+                textField.layer.borderColor = UIColor.red.cgColor
+            } else  if (textField.text?.count ?? 0) == 14 {
               textField.layer.borderColor = UIColor.textFieldBorderColor
             }
             
@@ -35,10 +42,24 @@ extension PersonalDataView: UITextFieldDelegate {
                         }
                     }
                 }
+        
+        if textField == telefoneTextField {
+                    if !string.isBackspace {
+                        if range.location == 0 {
+                            textField.text = textField.text! + "("
+                       }
+                        if  range.location == 3 {
+                            textField.text = textField.text! + ")"
+                        } else if range.location == 9 {
+                            textField.text = textField.text! + "-"
+                        }
+                    }
+                }
         return true
     }
-    
+
 }
+
 
 extension PersonalDataView: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

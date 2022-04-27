@@ -20,7 +20,11 @@ class PersonalDataView: ViewDefault {
 //    lazy var cpfLabel = CPFLabel(cpfLabel: " CPF: ")
 //    lazy var cpfTextField = CPFTextFieldDefault(placeholder: "  Digite o seu CPF ")
     lazy var telefoneLabel = TelefoneLabel(telefoneLabel: "Tel:")
-    lazy var telefoneTextField = TextFieldDefault(placeholder: " Digite seu número de telefone + DDD")
+    lazy var telefoneTextField: TextFieldDefault = {
+        let tf = TextFieldDefault(placeholder: " Digite o telefone + DDD")
+        tf.keyboardType = .numberPad
+        return tf
+    }()
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Próximo")
         bt.backgroundColor = .buttonBackgroundColor
@@ -119,6 +123,7 @@ class PersonalDataView: ViewDefault {
     
     private func setTextFields() {
         cpfTextField.delegate = self
+        telefoneTextField.delegate = self
     }
     
     @objc private func nextButtonTap() {
