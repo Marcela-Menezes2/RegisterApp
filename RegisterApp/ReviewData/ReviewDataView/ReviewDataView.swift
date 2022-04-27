@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ReviewDataView: UIView {
+class ReviewDataView: ViewDefault{
     
     // MARK: Closures
     var onNextTap: (() -> Void)?
@@ -16,7 +16,7 @@ class ReviewDataView: UIView {
     lazy var subTitleLabel = SubLabel(subLabel: " Data for review ")
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Salvar")
-        bt.backgroundColor = UIColor(red: 41/255, green: 176/255, blue: 109/255, alpha: 0.85)
+        bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt
     }()

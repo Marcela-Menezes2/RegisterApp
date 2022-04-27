@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddressViewController: UIViewController {
+class AddressViewController: ViewControllerDefault {
     
     var onNextTap: (() -> Void)?
     
@@ -25,6 +25,11 @@ class AddressViewController: UIViewController {
         self.view = self.addressView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Register"
+    }
 //    override func viewDidAppear(_ animated: Bool) {
 //        self.navigationController?.setNavigationBarHidden(true, animated: false)
 //    }

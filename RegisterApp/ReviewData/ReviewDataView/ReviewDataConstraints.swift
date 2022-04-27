@@ -9,23 +9,25 @@ import UIKit
 
 extension ReviewDataView {
     func setUIElements() {
-        setTitle()
+    //    setTitle()
         setSubTitle()
         setNextButton()
     }
-        private func setTitle() {
-            self.addSubview(titleLabel)
-            NSLayoutConstraint.activate([
-                titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
-                titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
-            ])
-        }
+//        private func setTitle() {
+//            self.addSubview(titleLabel)
+//            NSLayoutConstraint.activate([
+//                titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
+//                titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
+//            ])
+//        }
         
         private func setSubTitle() {
             self.addSubview(subTitleLabel)
             NSLayoutConstraint.activate([
-                subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
-                subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor)
+                subTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 160),
+                subTitleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15)
+//                subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
+//                subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor)
             ])
         }
     private func setNextButton() {

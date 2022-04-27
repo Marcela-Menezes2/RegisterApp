@@ -9,7 +9,7 @@
 
     extension RegisterView {
         func setUIElements() {
-            setTitle()
+//            setTitle()
             setSubTitle()
             setUsername()
             setEmail()
@@ -17,21 +17,24 @@
             setNextButton()
         }
         
-        private func setTitle() {
-            self.addSubview(titleLabel)
-            
-            NSLayoutConstraint.activate([
-                titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
-                titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
-            ])
-        }
+//        private func setTitle() {
+//            self.addSubview(titleLabel)
+//
+//            NSLayoutConstraint.activate([
+//                titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
+//                titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
+//            ])
+//        }
         
         private func setSubTitle() {
             self.addSubview(subTitleLabel)
             
             NSLayoutConstraint.activate([
-                subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
-                subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor),
+                
+                subTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 160),
+                subTitleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15),
+//                subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
+//                subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor),
             ])
     }
         
@@ -50,7 +53,7 @@
             self.addSubview(emailTextField)
             
             NSLayoutConstraint.activate([
-                emailTextField.topAnchor.constraint(equalTo: self.usernameTextField.bottomAnchor, constant: 30),
+                emailTextField.topAnchor.constraint(equalTo: self.usernameTextField.bottomAnchor, constant: 40),
                 emailTextField.leftAnchor.constraint(equalTo: self.usernameTextField.leftAnchor),
                 emailTextField.trailingAnchor.constraint(equalTo: self.usernameTextField.trailingAnchor),
                 emailTextField.heightAnchor.constraint(equalToConstant: 52),
@@ -61,7 +64,7 @@
             self.addSubview(passwordTextField)
             
             NSLayoutConstraint.activate([
-                passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 30),
+                passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 40),
                 passwordTextField.leftAnchor.constraint(equalTo: self.emailTextField.leftAnchor),
                 passwordTextField.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
                 passwordTextField.heightAnchor.constraint(equalToConstant: 52),

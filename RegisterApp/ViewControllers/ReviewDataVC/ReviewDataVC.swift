@@ -25,6 +25,12 @@ class ReviewDataVC: UIViewController {
         self.view = self.reviewDataView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Register"
+    }
+    
 //    override func viewDidAppear(_ animated: Bool) {
 //        self.navigationController?.setNavigationBarHidden(true, animated: false)
 //    }

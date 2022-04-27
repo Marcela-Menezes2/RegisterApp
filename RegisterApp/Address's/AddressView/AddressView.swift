@@ -7,12 +7,12 @@
 
 import UIKit
 
-class AddressView: UIView {
+class AddressView: ViewDefault {
     
     // MARK: Closures
     var onNextTap: (() -> Void)?
     
-    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
+//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: " Address Data ")
     lazy var idadeLabel = IdadeLabel(idadeLabel: "Rua:")
     lazy var ruaTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
@@ -28,9 +28,9 @@ class AddressView: UIView {
     lazy var stateButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .systemGray
+        button.backgroundColor = .textFieldBackgroundColor
         button.layer.cornerRadius = 10
-        button.setTitleColor(.black, for: UIControl.State.normal)
+        button.setTitleColor(.gray, for: UIControl.State.normal)
         let optionClosure = {(action: UIAction) in
             print(action.title)
         }
@@ -47,7 +47,7 @@ class AddressView: UIView {
     
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Próximo")
-        bt.backgroundColor = UIColor(red: 41/255, green: 176/255, blue: 109/255, alpha: 0.85)
+        bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt
     }()

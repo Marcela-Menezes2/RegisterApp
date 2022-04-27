@@ -10,12 +10,12 @@ import UIKit
 
 extension PersonalDataView {
     func setUIElements() {
-        setTitle()
+//        setTitle()
         setSubTitle()
         setIdadeLabel()
         setIdadeButton()
         setDadosLabel()
-        setGeneroButton()
+        setGenderTextField()
         setCpfLabel()
         setCpfTextField()
         setTelefoneLabel()
@@ -24,19 +24,21 @@ extension PersonalDataView {
         setNextButton()
     }
     
-    private func setTitle() {
-        self.addSubview(titleLabel)
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
-            titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
-        ])
-    }
+//    private func setTitle() {
+//        self.addSubview(titleLabel)
+//        NSLayoutConstraint.activate([
+//            titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
+//            titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
+//        ])
+//    }
     
     private func setSubTitle() {
         self.addSubview(subTitleLabel)
         NSLayoutConstraint.activate([
-            subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
-            subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor)
+            subTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 160),
+            subTitleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15)
+//            subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
+//            subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor)
         ])
     }
     
@@ -44,7 +46,7 @@ extension PersonalDataView {
         self.addSubview(idadeLabel)
         NSLayoutConstraint.activate([
             idadeLabel.topAnchor.constraint(equalTo: self.subTitleLabel.bottomAnchor, constant: 45),
-            idadeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5)
+            idadeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10)
         ])
     }
     
@@ -62,17 +64,17 @@ extension PersonalDataView {
         self.addSubview(dadosLabel)
         NSLayoutConstraint.activate([
             dadosLabel.topAnchor.constraint(equalTo: self.idadeLabel.bottomAnchor, constant: 60),
-            dadosLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5)
+            dadosLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10)
         ])
     }
     
-    private func setGeneroButton() {
-        self.addSubview(generoButton)
+    private func setGenderTextField() {
+        self.addSubview(genderTextField)
         NSLayoutConstraint.activate([
-            generoButton.topAnchor.constraint(equalTo: self.ageTextField.bottomAnchor, constant: 35),
-            generoButton.leftAnchor.constraint(equalTo: self.dadosLabel.leftAnchor, constant: 70),
-            generoButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            generoButton.heightAnchor.constraint(equalToConstant: 42)
+            genderTextField.topAnchor.constraint(equalTo: self.ageTextField.bottomAnchor, constant: 35),
+            genderTextField.leftAnchor.constraint(equalTo: self.dadosLabel.leftAnchor, constant: 70),
+            genderTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            genderTextField.heightAnchor.constraint(equalToConstant: 42)
         ])
     }
     
@@ -80,14 +82,14 @@ extension PersonalDataView {
         self.addSubview(cpfLabel)
         NSLayoutConstraint.activate([
             cpfLabel.topAnchor.constraint(equalTo: self.dadosLabel.bottomAnchor, constant: 60),
-            cpfLabel.leftAnchor.constraint(equalTo: self.leftAnchor)
+            cpfLabel.leftAnchor.constraint(equalTo: self.dadosLabel.leftAnchor)
         ])
     }
     
     private func setCpfTextField() {
         self.addSubview(cpfTextField)
         NSLayoutConstraint.activate([
-            cpfTextField.topAnchor.constraint(equalTo: self.generoButton.topAnchor, constant: 80),
+            cpfTextField.topAnchor.constraint(equalTo: self.genderTextField.topAnchor, constant: 80),
             cpfTextField.leftAnchor.constraint(equalTo: self.cpfLabel.leftAnchor, constant: 60),
             cpfTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             cpfTextField.heightAnchor.constraint(equalToConstant: 42)
@@ -98,7 +100,7 @@ extension PersonalDataView {
         self.addSubview(telefoneLabel)
         NSLayoutConstraint.activate([
             telefoneLabel.topAnchor.constraint(equalTo: self.cpfLabel.bottomAnchor, constant: 60),
-            telefoneLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5)
+            telefoneLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10)
         ])
     }
     

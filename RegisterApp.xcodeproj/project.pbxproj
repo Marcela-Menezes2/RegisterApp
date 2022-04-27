@@ -36,6 +36,13 @@
 		AD4EEAD0281862000088CF68 /* Numeric+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEACF281862000088CF68 /* Numeric+.swift */; };
 		AD4EEAD22818622A0088CF68 /* Formatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAD12818622A0088CF68 /* Formatter+.swift */; };
 		AD4EEAD4281863A80088CF68 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAD3281863A80088CF68 /* UIColor+.swift */; };
+		ADF7B41B281984DD00B0B31D /* GenderEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41A281984DD00B0B31D /* GenderEnums.swift */; };
+		ADF7B41D281987D900B0B31D /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41C281987D900B0B31D /* Collection+.swift */; };
+		ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41E281987F900B0B31D /* StringProtocol+.swift */; };
+		ADF7B42128198B8300B0B31D /* ScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B42028198B8300B0B31D /* ScrollView+.swift */; };
+		ADF7B423281995D400B0B31D /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B422281995D400B0B31D /* ViewDefault.swift */; };
+		ADF7B4252819977C00B0B31D /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B4242819977C00B0B31D /* ViewControllerDefault.swift */; };
+		ADF7B427281998A300B0B31D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B426281998A300B0B31D /* UIView+.swift */; };
 		ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */; };
 		ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */; };
 		ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */; };
@@ -78,6 +85,13 @@
 		AD4EEACF281862000088CF68 /* Numeric+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+.swift"; sourceTree = "<group>"; };
 		AD4EEAD12818622A0088CF68 /* Formatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+.swift"; sourceTree = "<group>"; };
 		AD4EEAD3281863A80088CF68 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		ADF7B41A281984DD00B0B31D /* GenderEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnums.swift; sourceTree = "<group>"; };
+		ADF7B41C281987D900B0B31D /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
+		ADF7B41E281987F900B0B31D /* StringProtocol+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+.swift"; sourceTree = "<group>"; };
+		ADF7B42028198B8300B0B31D /* ScrollView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+.swift"; sourceTree = "<group>"; };
+		ADF7B422281995D400B0B31D /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
+		ADF7B4242819977C00B0B31D /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		ADF7B426281998A300B0B31D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomDefault.swift; sourceTree = "<group>"; };
 		ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
 		ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
@@ -177,7 +191,6 @@
 		AD424A94280DCD0800555A6E /* RegisterApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD4EEAC72818604D0088CF68 /* Enums */,
 				AD424AAD280DCE7C00555A6E /* Delegate's */,
 				AD424AA9280DCD4200555A6E /* Register */,
 				ADFED5D428108EB500F3BDFA /* PersonalData */,
@@ -189,8 +202,8 @@
 				AD424A9E280DCD0B00555A6E /* Assets.xcassets */,
 				AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */,
 				AD424AA3280DCD0B00555A6E /* Info.plist */,
+				ADF7B4192819764100B0B31D /* Infrastructure */,
 				ADFA610A280EF7DC0008EBA7 /* Componentes */,
-				AD4EEACC281861970088CF68 /* Extensions */,
 			);
 			path = RegisterApp;
 			sourceTree = "<group>";
@@ -245,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4EEAC82818606D0088CF68 /* AgeEnums.swift */,
+				ADF7B41A281984DD00B0B31D /* GenderEnums.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -256,19 +270,34 @@
 				AD4EEACF281862000088CF68 /* Numeric+.swift */,
 				AD4EEAD12818622A0088CF68 /* Formatter+.swift */,
 				AD4EEAD3281863A80088CF68 /* UIColor+.swift */,
+				ADF7B41C281987D900B0B31D /* Collection+.swift */,
+				ADF7B41E281987F900B0B31D /* StringProtocol+.swift */,
+				ADF7B42028198B8300B0B31D /* ScrollView+.swift */,
+				ADF7B426281998A300B0B31D /* UIView+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADF7B4192819764100B0B31D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				AD4EEAC72818604D0088CF68 /* Enums */,
+				AD4EEACC281861970088CF68 /* Extensions */,
+				AD4EEAC028185A5E0088CF68 /* Constants */,
+				AD4EEABD28185A060088CF68 /* Utils */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		ADFA610A280EF7DC0008EBA7 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
+				ADF7B422281995D400B0B31D /* ViewDefault.swift */,
 				AD424AAE280DE33C00555A6E /* TextfieldDefault.swift */,
 				AD424AB0280DEAF500555A6E /* LabelDefault.swift */,
 				ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */,
 				AD4EEAC528185F510088CF68 /* ToolBarPicketView.swift */,
-				AD4EEABD28185A060088CF68 /* Utils */,
-				AD4EEAC028185A5E0088CF68 /* Constants */,
+				ADF7B4242819977C00B0B31D /* ViewControllerDefault.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -400,16 +429,19 @@
 				AD4EEAD0281862000088CF68 /* Numeric+.swift in Sources */,
 				ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */,
 				AD4EEABF28185A2F0088CF68 /* RegExp.swift in Sources */,
+				ADF7B427281998A300B0B31D /* UIView+.swift in Sources */,
 				AD3797412816E471004420E3 /* ReviewDataConstraints.swift in Sources */,
 				AD03D76B281475540079E249 /* AddressVC.swift in Sources */,
 				ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */,
 				AD03D7652814694C0079E249 /* PersonalDataConstraints.swift in Sources */,
+				ADF7B423281995D400B0B31D /* ViewDefault.swift in Sources */,
 				AD424A9A280DCD0800555A6E /* RegisterViewController.swift in Sources */,
 				AD424AAF280DE33C00555A6E /* TextfieldDefault.swift in Sources */,
 				AD4EEAD22818622A0088CF68 /* Formatter+.swift in Sources */,
 				ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */,
 				AD4EEAC92818606D0088CF68 /* AgeEnums.swift in Sources */,
 				AD4EEAC628185F510088CF68 /* ToolBarPicketView.swift in Sources */,
+				ADF7B42128198B8300B0B31D /* ScrollView+.swift in Sources */,
 				AD4EEAC228185A880088CF68 /* ConstantsColor.swift in Sources */,
 				AD379748281703C0004420E3 /* States.swift in Sources */,
 				AD37973F2816E38E004420E3 /* ReviewDataView.swift in Sources */,
@@ -420,11 +452,15 @@
 				AD3797392816C4BB004420E3 /* AddressConstraints.swift in Sources */,
 				AD4EEACB281861500088CF68 /* PersonalDataExtensions.swift in Sources */,
 				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
+				ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */,
 				AD4EEACE281861CB0088CF68 /* String+.swift in Sources */,
+				ADF7B41B281984DD00B0B31D /* GenderEnums.swift in Sources */,
+				ADF7B41D281987D900B0B31D /* Collection+.swift in Sources */,
 				ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */,
 				AD4EEAD4281863A80088CF68 /* UIColor+.swift in Sources */,
 				AD424AB1280DEAF500555A6E /* LabelDefault.swift in Sources */,
 				AD4EEAB8281841100088CF68 /* ReviewCoordinator.swift in Sources */,
+				ADF7B4252819977C00B0B31D /* ViewControllerDefault.swift in Sources */,
 				AD03D7682814747F0079E249 /* AddressView.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD4EEAC428185ADC0088CF68 /* RegisterViewDelegate.swift in Sources */,

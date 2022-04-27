@@ -9,7 +9,7 @@ import UIKit
 
 extension AddressView {
     func setUIElements() {
-        setTitle()
+   //     setTitle()
         setSubTitle()
         setIdadeLabel()
         setRuaTextField()
@@ -26,21 +26,23 @@ extension AddressView {
         setNextButton()
     }
     
-    private func setTitle() {
-        self.addSubview(titleLabel)
-        
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
-            titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
-        ])
-    }
+//    private func setTitle() {
+//        self.addSubview(titleLabel)
+//
+//        NSLayoutConstraint.activate([
+//            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
+//            titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20)
+//        ])
+//    }
     
     private func setSubTitle() {
         self.addSubview(subTitleLabel)
         
         NSLayoutConstraint.activate([
-            subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
-            subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor)
+            subTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 160),
+            subTitleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15)
+//            subTitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 14),
+//            subTitleLabel.leftAnchor.constraint(equalTo: self.titleLabel.leftAnchor)
         ])
 }
     
@@ -49,7 +51,7 @@ extension AddressView {
         
         NSLayoutConstraint.activate([
         idadeLabel.topAnchor.constraint(equalTo: self.subTitleLabel.bottomAnchor, constant: 45),
-        idadeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 6)
+        idadeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10)
         ])
 }
     
@@ -113,7 +115,7 @@ extension AddressView {
         
         NSLayoutConstraint.activate([
             cepLabel.topAnchor.constraint(equalTo: self.bairroLabel.bottomAnchor, constant: 60),
-            cepLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 6),
+            cepLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
 
             
         ])
@@ -138,7 +140,7 @@ extension AddressView {
         
         NSLayoutConstraint.activate([
             cidadeLabel.topAnchor.constraint(equalTo: self.cepLabel.bottomAnchor, constant: 60),
-            cidadeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 6),
+            cidadeLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
 
         ])
 }
@@ -160,7 +162,7 @@ extension AddressView {
         
         NSLayoutConstraint.activate([
             estadoLabel.topAnchor.constraint(equalTo: self.cidadeLabel.bottomAnchor, constant: 60),
-            estadoLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 6),
+            estadoLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
         ])
 }
     

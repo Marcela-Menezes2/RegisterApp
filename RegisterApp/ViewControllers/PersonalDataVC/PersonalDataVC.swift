@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class PersonalDataVC: UIViewController {
+class PersonalDataVC: ViewControllerDefault {
     
     var onNextTap: (() -> Void)?
     
@@ -25,6 +25,12 @@ class PersonalDataVC: UIViewController {
         self.view = self.personalDataView
     }
    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Register"
+        self.navigationController?.navigationBar.backItem?.title = "Voltar"
+    }
 //    override func viewDidAppear(_ animated: Bool) {
 //        self.navigationController?.setNavigationBarHidden(true, animated: false)
 //    }

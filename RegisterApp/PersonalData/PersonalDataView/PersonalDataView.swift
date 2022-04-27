@@ -7,29 +7,28 @@
 
 import UIKit
 
-class PersonalDataView: UIView {
+class PersonalDataView: ViewDefault {
     
     // MARK: Closures
     var onNextTap: (() -> Void)?
     
 //    lazy var logoImage = LogoImage(logoImage: "verde")
-    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
+//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: " Personal data ")
     lazy var idadeLabel = IdadeLabel(idadeLabel: "Idade:")
-    lazy var dadosLabel = DadosLabel(dadosLabel: "Gênero:")
-    lazy var cpfLabel = CPFLabel(cpfLabel: " CPF: ")
-    lazy var cpfTextField = TextFieldDefault(placeholder: "  Digite o seu CPF ")
+//    lazy var dadosLabel = DadosLabel(dadosLabel: "Gênero:")
+//    lazy var cpfLabel = CPFLabel(cpfLabel: " CPF: ")
+//    lazy var cpfTextField = CPFTextFieldDefault(placeholder: "  Digite o seu CPF ")
     lazy var telefoneLabel = TelefoneLabel(telefoneLabel: "Tel:")
     lazy var telefoneTextField = TextFieldDefault(placeholder: " Digite seu número de telefone + DDD")
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Próximo")
-        bt.backgroundColor = UIColor(red: 41/255, green: 176/255, blue: 109/255, alpha: 0.85)
+        bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt
     }()
     
- //   let ageLabel = LabelDefault(text: "Faixa etária")
-    lazy var ageTextField = TextFieldDefault(placeholder: "Sua idade")
+    lazy var ageTextField = TextFieldDefault(placeholder: "  Selecione sua idade")
     lazy var agePickerView:ToolbarPickerView = {
 
         let picker = ToolbarPickerView()
@@ -50,7 +49,31 @@ class PersonalDataView: UIView {
         
         return picker
     }()
-//    lazy var idadeButton: UIButton = {
+    lazy var dadosLabel = DadosLabel(dadosLabel: "Gênero:")
+    lazy var genderTextField = TextFieldDefault(placeholder: "  Selecione seu Gênero")
+    lazy var genderPickerView: ToolbarPickerView = {
+        let picker = ToolbarPickerView()
+        picker.translatesAutoresizingMaskIntoConstraints = false
+        
+        picker.didTapDone = { [weak self] in
+            guard let self = self else { return }
+            
+            let row = picker.selectedRow(inComponent: 0)
+            picker.selectRow(row, inComponent: 0, animated: false)
+            self.genderTextField.text = Gender.allCases[row].rawValue
+            self.genderTextField.resignFirstResponder()
+        }
+        
+        picker.didTapCancel = {
+            self.genderTextField.resignFirstResponder()
+        }
+        
+        return picker
+    }()
+    
+    lazy var cpfLabel = CPFLabel(cpfLabel: "CPF:")
+    lazy var cpfTextField = CPFTextFieldDefault(placeholder: "Digite seu CPF", keyboardType: .numberPad)
+//    lazy var generoButton: UIButton = {
 //        let button = UIButton()
 //        button.translatesAutoresizingMaskIntoConstraints = false
 //        button.backgroundColor = .systemGray
@@ -61,45 +84,23 @@ class PersonalDataView: UIView {
 //        }
 //
 //        button.menu = UIMenu(children: [
-//            UIAction(title: "Selecione a sua idade", state: .on, handler: optionClosure),
-//            UIAction(title: "De 0 a 15 anos", handler: optionClosure),
-//            UIAction(title: "De 16 a 25 anos", handler: optionClosure),
-//            UIAction(title: "De 26 a 35 anos", handler: optionClosure),
-//            UIAction(title: "De 36 a 50 anos", handler: optionClosure),
-//            UIAction(title: "Maior que 50 anos", handler: optionClosure),
+//            UIAction(title: "Selecione o seu gênero", state: .on, handler: optionClosure),
+//            UIAction(title: "Masculino", handler: optionClosure),
+//            UIAction(title: "Feminino", handler: optionClosure),
+//            UIAction(title: "Prefiro não informar", handler: optionClosure),
 //        ])
 //        button.showsMenuAsPrimaryAction = true
 //        button.changesSelectionAsPrimaryAction = true
 //        return button
 //    }()
-    
-    lazy var generoButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .systemGray
-        button.layer.cornerRadius = 10
-        button.setTitleColor(.black, for: UIControl.State.normal)
-        let optionClosure = {(action: UIAction) in
-            print(action.title)
-        }
-        
-        button.menu = UIMenu(children: [
-            UIAction(title: "Selecione o seu gênero", state: .on, handler: optionClosure),
-            UIAction(title: "Masculino", handler: optionClosure),
-            UIAction(title: "Feminino", handler: optionClosure),
-            UIAction(title: "Prefiro não informar", handler: optionClosure),
-        ])
-        button.showsMenuAsPrimaryAction = true
-        button.changesSelectionAsPrimaryAction = true
-        return button
-    }()
-    
+//
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
         
         setUIElements()
         setPickerView()
+        setTextFields()
     }
     
     private func setPickerView() {
@@ -109,7 +110,17 @@ class PersonalDataView: UIView {
         ageTextField.inputAccessoryView = agePickerView.toolbar
         
         
+        genderPickerView.dataSource = self
+        genderPickerView.delegate = self
+        genderTextField.inputView = genderPickerView
+        genderTextField.inputAccessoryView = genderPickerView.toolbar
+        
     }
+    
+    private func setTextFields() {
+        cpfTextField.delegate = self
+    }
+    
     @objc private func nextButtonTap() {
         onNextTap?()
         print("Hey")
@@ -121,14 +132,14 @@ class PersonalDataView: UIView {
         
     }
 }
-
-import SwiftUI
-import UIViewCanvas
-
-struct MyPreview: PreviewProvider {
-    static var previews: some View {
-        ViewCanvas(for: PersonalDataView())
-    }
-}
+//
+//import SwiftUI
+//import UIViewCanvas
+//
+//struct MyPreview: PreviewProvider {
+//    static var previews: some View {
+//        ViewCanvas(for: PersonalDataView())
+//    }
+//}
 
 

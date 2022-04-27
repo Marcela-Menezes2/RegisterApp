@@ -7,20 +7,20 @@
 
 import UIKit
 
-class RegisterView: UIView {
+class RegisterView: ViewDefault {
     
     // MARK: Closures
     var onNextTap: (() -> Void)?
     var onPasswordWrong: (()->Void)?
     
-    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
+//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: "Login data ")
     lazy var usernameTextField = TextFieldDefault(placeholder: "  Username ")
     lazy var emailTextField = TextFieldDefault(placeholder: "  Email ")
     lazy var passwordTextField = TextFieldDefault(placeholder: "  Password ", isSecureTextEntry: true)
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Próximo")
-        bt.backgroundColor = UIColor(red: 41/255, green: 176/255, blue: 109/255, alpha: 0.85)
+        bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt
     }()
