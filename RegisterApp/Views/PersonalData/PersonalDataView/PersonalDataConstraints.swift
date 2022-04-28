@@ -105,7 +105,7 @@ extension PersonalDataView {
     private func setNextButton() {
         self.addSubview(nextButton)
         NSLayoutConstraint.activate([
-            nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
+            nextButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -40),
             nextButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
             nextButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
             nextButton.heightAnchor.constraint(equalToConstant: 36),

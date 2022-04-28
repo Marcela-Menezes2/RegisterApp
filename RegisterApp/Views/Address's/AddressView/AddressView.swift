@@ -13,10 +13,10 @@ class AddressView: ViewDefault {
     var onNextTap: (()  -> Void)?
     
     lazy var subTitleLabel = SubLabel(subLabel: " Address Data ")
-    lazy var idadeLabel = IdadeLabel(idadeLabel: "Rua:")
+    lazy var ruaLabel = IdadeLabel(idadeLabel: "Rua:")
     lazy var ruaTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
-    lazy var numeroLabel = NumeroLabel(numeroLabel: " Número:")
-    lazy var numeroTextField = TextFieldDefault(placeholder: "  Insira a sua resposta ")
+    lazy var numeroLabel = NumeroLabel(numeroLabel: " N°:")
+    lazy var numeroTextField = TextFieldDefault(placeholder: "  Digite aqui - S/N ")
     lazy var bairroLabel = BairroLabel(bairroLabel: "Bairro:")
     lazy var bairroTextField = TextFieldDefault(placeholder: " Insira a sua resposta")
     lazy var cepLabel = CepLabel(cepLabel: "CEP")
@@ -30,8 +30,16 @@ class AddressView: ViewDefault {
     
     lazy var cidadeLabel = CidadeLabel(cidadeLabel: " Cidade:")
     lazy var cidadeTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
-    lazy var estadoLabel = EstadoLabel(estadoLabel: "Estado:")
-    lazy var stateButton: UIButton = {
+    lazy var estadoLabel = EstadoLabel(estadoLabel: " Estado:")
+    lazy var estadoTextField = TextFieldDefault(placeholder: " Insira a sua resposta")
+    lazy var ufLabel = NumeroLabel(numeroLabel: "  UF: ")
+    lazy var ufTextField = TextFieldDefault(placeholder: "  Insira a sua resposta ")
+    lazy var logradouroLabel = SubLabel(subLabel: " Logradouro: ")
+    lazy var logradouroTextField = TextFieldDefault(placeholder: "  Insira a sua resposta ")
+    lazy var complementoLabel = SubLabel(subLabel: " Complemento: ")
+    lazy var complementoTextField = TextFieldDefault(placeholder: "  Insira a sua resposta ")
+    lazy var paisLabel = EstadoLabel(estadoLabel: " País:")
+    lazy var paisButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .textFieldBackgroundColor
@@ -71,6 +79,7 @@ class AddressView: ViewDefault {
             }
             
             let viewModel = CEPViewModel(model: model)
+            self.updateCamp(cepModel: viewModel)
             print(viewModel)
         }
     }
@@ -92,13 +101,13 @@ class AddressView: ViewDefault {
     }
     
 }
-//
-//import SwiftUI
-//import UIViewCanvas
-//
-//struct MyPreview: PreviewProvider {
-//    static var previews: some View {
-//        ViewCanvas(for: AddressView())
-//    }
-//}
-//
+
+import SwiftUI
+import UIViewCanvas
+
+struct MyPreview: PreviewProvider {
+    static var previews: some View {
+        ViewCanvas(for: AddressView())
+    }
+}
+

@@ -42,6 +42,7 @@
 		ADE67219281AF707009FF144 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67218281AF707009FF144 /* UserViewModel.swift */; };
 		ADE6721B281AF750009FF144 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6721A281AF750009FF144 /* UserModel.swift */; };
 		ADE6721D281AFCFF009FF144 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6721C281AFCFF009FF144 /* UserProvider.swift */; };
+		ADE67221281B1962009FF144 /* AddressExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67220281B1962009FF144 /* AddressExtensions.swift */; };
 		ADF7B41B281984DD00B0B31D /* GenderEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41A281984DD00B0B31D /* GenderEnums.swift */; };
 		ADF7B41D281987D900B0B31D /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41C281987D900B0B31D /* Collection+.swift */; };
 		ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41E281987F900B0B31D /* StringProtocol+.swift */; };
@@ -97,6 +98,7 @@
 		ADE67218281AF707009FF144 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		ADE6721A281AF750009FF144 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		ADE6721C281AFCFF009FF144 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		ADE67220281B1962009FF144 /* AddressExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressExtensions.swift; sourceTree = "<group>"; };
 		ADF7B41A281984DD00B0B31D /* GenderEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnums.swift; sourceTree = "<group>"; };
 		ADF7B41C281987D900B0B31D /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
 		ADF7B41E281987F900B0B31D /* StringProtocol+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+.swift"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				AD03D7672814747F0079E249 /* AddressView.swift */,
 				AD3797382816C4BB004420E3 /* AddressConstraints.swift */,
 				AD379747281703C0004420E3 /* States.swift */,
+				ADE67220281B1962009FF144 /* AddressExtensions.swift */,
 			);
 			path = AddressView;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				ADFED5D028107B6500F3BDFA /* AddressCoordinator.swift in Sources */,
 				AD3797392816C4BB004420E3 /* AddressConstraints.swift in Sources */,
 				AD4EEACB281861500088CF68 /* PersonalDataExtensions.swift in Sources */,
+				ADE67221281B1962009FF144 /* AddressExtensions.swift in Sources */,
 				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
 				ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */,
 				AD4EEACE281861CB0088CF68 /* String+.swift in Sources */,
