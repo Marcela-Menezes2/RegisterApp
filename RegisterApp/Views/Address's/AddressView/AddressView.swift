@@ -10,9 +10,8 @@ import UIKit
 class AddressView: ViewDefault {
     
     // MARK: Closures
-    var onNextTap: (() -> Void)?
+    var onNextTap: (()  -> Void)?
     
-//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: " Address Data ")
     lazy var idadeLabel = IdadeLabel(idadeLabel: "Rua:")
     lazy var ruaTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
@@ -20,8 +19,15 @@ class AddressView: ViewDefault {
     lazy var numeroTextField = TextFieldDefault(placeholder: "  Insira a sua resposta ")
     lazy var bairroLabel = BairroLabel(bairroLabel: "Bairro:")
     lazy var bairroTextField = TextFieldDefault(placeholder: " Insira a sua resposta")
-    lazy var cepLabel = CepLabel(cepLabel: " Cep:")
-    lazy var cepTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
+    lazy var cepLabel = CepLabel(cepLabel: "CEP")
+    lazy var cepTextField = CPFTextFieldDefault(placeholder: "informe seu CEP", keyboardType: .numberPad)
+    lazy var buscaCEPButton: ButtonDefault = {
+        let bt = ButtonDefault(setTitle: "🔍")
+        bt.addTarget(self, action: #selector(buscaCEPButtonTAP), for: .touchUpInside)
+        
+        return bt
+    }()
+    
     lazy var cidadeLabel = CidadeLabel(cidadeLabel: " Cidade:")
     lazy var cidadeTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
     lazy var estadoLabel = EstadoLabel(estadoLabel: "Estado:")
@@ -52,15 +58,32 @@ class AddressView: ViewDefault {
         return bt
     }()
     
+    @objc
+    private func buscaCEPButtonTAP() {
+        guard let cep = cepTextField.text else { return }
+        
+        let provider = CEPProvider()
+        provider.getEndereco(withCEP: cep) { (model, error) in
+            guard let model = model
+            else {
+                print("Deu erro na busca do cep: \(String(describing: error))")
+                return
+            }
+            
+            let viewModel = CEPViewModel(model: model)
+            print(viewModel)
+        }
+    }
+    @objc private func nextButtonTap() {
+        onNextTap?()
+        print("Hey")
+    }
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
         setUIElements()
-        
-    }
-    
-    @objc private func nextButtonTap() {
-        onNextTap?()
         
     }
     

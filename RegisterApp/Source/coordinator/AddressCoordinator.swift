@@ -29,29 +29,3 @@ class AddressCoordinator: Coordinator {
             coordinator.start()
         }
     }
-
-// 
-//import UIKit
-//
-//class RegisterCoordinator: Coordinator {
-//    var navigationController: UINavigationController
-//    
-//    init (navigationController: UINavigationController) {
-//        self.navigationController = navigationController
-//    }
-//
-//    func start() {
-//        let viewController = RegisterViewController()
-//        
-//            viewController.onNextTap = {
-//                self.nextView()
-//            }
-//            
-//            self.navigationController.pushViewController(viewController, animated: true)
-//        }
-//        
-//        private func nextView() {
-//            let coordinator = AddressCoordinator(navigationController: self.navigationController)
-//            coordinator.start()
-//        }
-//    }

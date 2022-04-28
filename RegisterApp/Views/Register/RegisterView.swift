@@ -10,10 +10,9 @@ import UIKit
 class RegisterView: ViewDefault {
     
     // MARK: Closures
-    var onNextTap: (() -> Void)?
+    var onNextTap: ((_ userViewModel: UserViewModel) -> Void)?
     var onPasswordWrong: (()->Void)?
     
-//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: "Login data ")
     lazy var usernameTextField = TextFieldDefault(placeholder: "  Username ")
     lazy var emailTextField = TextFieldDefault(placeholder: "  Email ")
@@ -32,11 +31,15 @@ class RegisterView: ViewDefault {
         self.setUIElements()
         self.setupTextFields()
     }
-
+    
     
     @objc private func nextButtonTap() {
-        onNextTap?()
+        //        onNextTap?()
+        let userViewModel = UserViewModel(model: UserModel(id: 0, email: emailTextField.text ?? String.empty, password: passwordTextField.text ?? String.empty))
+        
+        onNextTap?(userViewModel)
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

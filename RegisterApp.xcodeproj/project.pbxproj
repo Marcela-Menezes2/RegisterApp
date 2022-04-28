@@ -36,6 +36,12 @@
 		AD4EEAD0281862000088CF68 /* Numeric+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEACF281862000088CF68 /* Numeric+.swift */; };
 		AD4EEAD22818622A0088CF68 /* Formatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAD12818622A0088CF68 /* Formatter+.swift */; };
 		AD4EEAD4281863A80088CF68 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAD3281863A80088CF68 /* UIColor+.swift */; };
+		ADE67210281AD597009FF144 /* CEPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6720F281AD597009FF144 /* CEPModel.swift */; };
+		ADE67214281AD62D009FF144 /* CEPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67213281AD62D009FF144 /* CEPViewModel.swift */; };
+		ADE67217281AD70D009FF144 /* CEPProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67216281AD70D009FF144 /* CEPProvider.swift */; };
+		ADE67219281AF707009FF144 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67218281AF707009FF144 /* UserViewModel.swift */; };
+		ADE6721B281AF750009FF144 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6721A281AF750009FF144 /* UserModel.swift */; };
+		ADE6721D281AFCFF009FF144 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6721C281AFCFF009FF144 /* UserProvider.swift */; };
 		ADF7B41B281984DD00B0B31D /* GenderEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41A281984DD00B0B31D /* GenderEnums.swift */; };
 		ADF7B41D281987D900B0B31D /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41C281987D900B0B31D /* Collection+.swift */; };
 		ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B41E281987F900B0B31D /* StringProtocol+.swift */; };
@@ -85,6 +91,12 @@
 		AD4EEACF281862000088CF68 /* Numeric+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+.swift"; sourceTree = "<group>"; };
 		AD4EEAD12818622A0088CF68 /* Formatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+.swift"; sourceTree = "<group>"; };
 		AD4EEAD3281863A80088CF68 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		ADE6720F281AD597009FF144 /* CEPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPModel.swift; sourceTree = "<group>"; };
+		ADE67213281AD62D009FF144 /* CEPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPViewModel.swift; sourceTree = "<group>"; };
+		ADE67216281AD70D009FF144 /* CEPProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPProvider.swift; sourceTree = "<group>"; };
+		ADE67218281AF707009FF144 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		ADE6721A281AF750009FF144 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		ADE6721C281AFCFF009FF144 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
 		ADF7B41A281984DD00B0B31D /* GenderEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnums.swift; sourceTree = "<group>"; };
 		ADF7B41C281987D900B0B31D /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
 		ADF7B41E281987F900B0B31D /* StringProtocol+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+.swift"; sourceTree = "<group>"; };
@@ -192,18 +204,13 @@
 			isa = PBXGroup;
 			children = (
 				AD424AAD280DCE7C00555A6E /* Delegate's */,
-				AD424AA9280DCD4200555A6E /* Register */,
-				ADFED5D428108EB500F3BDFA /* PersonalData */,
-				AD03D7662814742B0079E249 /* Address's */,
-				AD37973D2816E369004420E3 /* ReviewData */,
+				ADE6721F281B0FC6009FF144 /* Views */,
 				AD424AAC280DCE4700555A6E /* ViewControllers */,
 				AD424A9B280DCD0800555A6E /* Main.storyboard */,
 				AD424A9E280DCD0B00555A6E /* Assets.xcassets */,
 				AD424AA0280DCD0B00555A6E /* LaunchScreen.storyboard */,
 				AD424AA3280DCD0B00555A6E /* Info.plist */,
 				ADFED5C9281074DD00F3BDFA /* Source */,
-				ADF7B4192819764100B0B31D /* Infrastructure */,
-				ADFA610A280EF7DC0008EBA7 /* Componentes */,
 			);
 			path = RegisterApp;
 			sourceTree = "<group>";
@@ -278,6 +285,54 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		ADE67211281AD5AF009FF144 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6720F281AD597009FF144 /* CEPModel.swift */,
+				ADE6721A281AF750009FF144 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADE67212281AD5FC009FF144 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADE67213281AD62D009FF144 /* CEPViewModel.swift */,
+				ADE67218281AF707009FF144 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADE67215281AD6F2009FF144 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				ADE67216281AD70D009FF144 /* CEPProvider.swift */,
+				ADE6721C281AFCFF009FF144 /* UserProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		ADE6721E281B0F4A009FF144 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ADE67215281AD6F2009FF144 /* Provider */,
+				ADE67212281AD5FC009FF144 /* ViewModel */,
+				ADE67211281AD5AF009FF144 /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ADE6721F281B0FC6009FF144 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD424AA9280DCD4200555A6E /* Register */,
+				ADFED5D428108EB500F3BDFA /* PersonalData */,
+				AD03D7662814742B0079E249 /* Address's */,
+				AD37973D2816E369004420E3 /* ReviewData */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		ADF7B4192819764100B0B31D /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,7 +368,10 @@
 		ADFED5C9281074DD00F3BDFA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				ADE6721E281B0F4A009FF144 /* API */,
 				ADFED5CA281074F600F3BDFA /* coordinator */,
+				ADF7B4192819764100B0B31D /* Infrastructure */,
+				ADFA610A280EF7DC0008EBA7 /* Componentes */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -426,12 +484,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD424AAB280DCD5900555A6E /* RegisterView.swift in Sources */,
+				ADE67219281AF707009FF144 /* UserViewModel.swift in Sources */,
 				AD4EEAD0281862000088CF68 /* Numeric+.swift in Sources */,
 				ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */,
 				AD4EEABF28185A2F0088CF68 /* RegExp.swift in Sources */,
 				ADF7B427281998A300B0B31D /* UIView+.swift in Sources */,
 				AD3797412816E471004420E3 /* ReviewDataConstraints.swift in Sources */,
 				AD03D76B281475540079E249 /* AddressVC.swift in Sources */,
+				ADE67210281AD597009FF144 /* CEPModel.swift in Sources */,
 				ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */,
 				AD03D7652814694C0079E249 /* PersonalDataConstraints.swift in Sources */,
 				ADF7B423281995D400B0B31D /* ViewDefault.swift in Sources */,
@@ -440,11 +500,13 @@
 				AD4EEAD22818622A0088CF68 /* Formatter+.swift in Sources */,
 				ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */,
 				AD4EEAC92818606D0088CF68 /* AgeEnums.swift in Sources */,
+				ADE6721D281AFCFF009FF144 /* UserProvider.swift in Sources */,
 				AD4EEAC628185F510088CF68 /* ToolBarPicketView.swift in Sources */,
 				ADF7B42128198B8300B0B31D /* ScrollView+.swift in Sources */,
 				AD4EEAC228185A880088CF68 /* ConstantsColor.swift in Sources */,
 				AD379748281703C0004420E3 /* States.swift in Sources */,
 				AD37973F2816E38E004420E3 /* ReviewDataView.swift in Sources */,
+				ADE67214281AD62D009FF144 /* CEPViewModel.swift in Sources */,
 				AD3797442816E4F0004420E3 /* ReviewDataVC.swift in Sources */,
 				AD4EEABA281842DA0088CF68 /* PersonalDataCoordinator.swift in Sources */,
 				ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */,
@@ -454,6 +516,7 @@
 				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
 				ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */,
 				AD4EEACE281861CB0088CF68 /* String+.swift in Sources */,
+				ADE67217281AD70D009FF144 /* CEPProvider.swift in Sources */,
 				ADF7B41B281984DD00B0B31D /* GenderEnums.swift in Sources */,
 				ADF7B41D281987D900B0B31D /* Collection+.swift in Sources */,
 				ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */,
@@ -464,6 +527,7 @@
 				AD03D7682814747F0079E249 /* AddressView.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD4EEAC428185ADC0088CF68 /* RegisterViewDelegate.swift in Sources */,
+				ADE6721B281AF750009FF144 /* UserModel.swift in Sources */,
 				AD424A98280DCD0800555A6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@ import UIKit
 
 class AddressViewController: ViewControllerDefault {
     
+  //  var onNextTap: (() -> Void)?
     var onNextTap: (() -> Void)?
     
     lazy var addressView: AddressView = {
@@ -17,8 +18,12 @@ class AddressViewController: ViewControllerDefault {
         
         view.onNextTap = {
             self.onNextTap?()
+        
+//            view.onNextTap = {userViewModel in
+//            self.onNextTap?(userViewModel)
         }
-        return view
+      
+      return view
     }()
     
     override func loadView() {
@@ -34,4 +39,5 @@ class AddressViewController: ViewControllerDefault {
 //        self.navigationController?.setNavigationBarHidden(true, animated: false)
 //    }
 }
+
 

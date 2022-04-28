@@ -19,8 +19,8 @@ extension RegisterView:  UITextFieldDelegate {
             }
         }
     }
-  
-     func setupTextFields() {
+    
+    func setupTextFields() {
         self.passwordTextField.delegate = self
         self.passwordTextField.keyboardType = .default
         self.emailTextField.keyboardType = .emailAddress

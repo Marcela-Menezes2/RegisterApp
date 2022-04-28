@@ -8,14 +8,15 @@
 import UIKit
 
 class RegisterViewController: ViewControllerDefault {
-    var onNextTap: (() -> Void)?
+    var onNextTap: ((_ userViewModel: UserViewModel) -> Void)?
     
     lazy var registerView: RegisterView = {
         let view = RegisterView()
         
-        
-        view.onNextTap = {
-            self.onNextTap?()
+        view.onNextTap = {userViewModel in
+            self.onNextTap?(userViewModel)
+//        view.onNextTap = {
+//            self.onNextTap?()
         }
         
         view.onPasswordWrong = {

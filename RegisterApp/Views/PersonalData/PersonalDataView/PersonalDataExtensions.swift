@@ -15,7 +15,7 @@ extension PersonalDataView: UITextFieldDelegate {
             if (textField.text?.count ?? 0) < 14 {
                 textField.layer.borderColor = UIColor.red.cgColor
             } else if textField.text?.isValidCPF ?? false {
-              textField.layer.borderColor = UIColor.textFieldBorderColor
+                textField.layer.borderColor = UIColor.textFieldBorderColor
             }
             
             textField.text = String(textField.text!.prefix(14))
@@ -25,39 +25,39 @@ extension PersonalDataView: UITextFieldDelegate {
             if (textField.text?.count ?? 0) < 14 {
                 textField.layer.borderColor = UIColor.red.cgColor
             } else  if (textField.text?.count ?? 0) == 14 {
-              textField.layer.borderColor = UIColor.textFieldBorderColor
+                textField.layer.borderColor = UIColor.textFieldBorderColor
             }
             
             textField.text = String(textField.text!.prefix(14))
         }
     }
-
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == cpfTextField {
-                    if !string.isBackspace {
-                        if range.location == 3 || range.location == 7 {
-                            textField.text = textField.text! + "."
-                        } else if range.location == 11 {
-                            textField.text = textField.text! + "-"
-                        }
-                    }
+            if !string.isBackspace {
+                if range.location == 3 || range.location == 7 {
+                    textField.text = textField.text! + "."
+                } else if range.location == 11 {
+                    textField.text = textField.text! + "-"
                 }
+            }
+        }
         
         if textField == telefoneTextField {
-                    if !string.isBackspace {
-                        if range.location == 0 {
-                            textField.text = textField.text! + "("
-                       }
-                        if  range.location == 3 {
-                            textField.text = textField.text! + ")"
-                        } else if range.location == 9 {
-                            textField.text = textField.text! + "-"
-                        }
-                    }
+            if !string.isBackspace {
+                if range.location == 0 {
+                    textField.text = textField.text! + "("
                 }
+                if  range.location == 3 {
+                    textField.text = textField.text! + ")"
+                } else if range.location == 9 {
+                    textField.text = textField.text! + "-"
+                }
+            }
+        }
         return true
     }
-
+    
 }
 
 

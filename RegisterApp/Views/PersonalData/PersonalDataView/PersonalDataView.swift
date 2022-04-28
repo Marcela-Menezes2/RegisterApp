@@ -12,13 +12,8 @@ class PersonalDataView: ViewDefault {
     // MARK: Closures
     var onNextTap: (() -> Void)?
     
-//    lazy var logoImage = LogoImage(logoImage: "verde")
-//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
     lazy var subTitleLabel = SubLabel(subLabel: " Personal data ")
     lazy var idadeLabel = IdadeLabel(idadeLabel: "Idade:")
-//    lazy var dadosLabel = DadosLabel(dadosLabel: "Gênero:")
-//    lazy var cpfLabel = CPFLabel(cpfLabel: " CPF: ")
-//    lazy var cpfTextField = CPFTextFieldDefault(placeholder: "  Digite o seu CPF ")
     lazy var telefoneLabel = TelefoneLabel(telefoneLabel: "Tel:")
     lazy var telefoneTextField: TextFieldDefault = {
         let tf = TextFieldDefault(placeholder: " Digite o telefone + DDD")
@@ -34,7 +29,7 @@ class PersonalDataView: ViewDefault {
     
     lazy var ageTextField = TextFieldDefault(placeholder: "  Selecione sua idade")
     lazy var agePickerView:ToolbarPickerView = {
-
+        
         let picker = ToolbarPickerView()
         picker.translatesAutoresizingMaskIntoConstraints = false
         
@@ -77,27 +72,7 @@ class PersonalDataView: ViewDefault {
     
     lazy var cpfLabel = CPFLabel(cpfLabel: "CPF:")
     lazy var cpfTextField = CPFTextFieldDefault(placeholder: "Digite seu CPF", keyboardType: .numberPad)
-//    lazy var generoButton: UIButton = {
-//        let button = UIButton()
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.backgroundColor = .systemGray
-//        button.layer.cornerRadius = 10
-//        button.setTitleColor(.black, for: UIControl.State.normal)
-//        let optionClosure = {(action: UIAction) in
-//            print(action.title)
-//        }
-//
-//        button.menu = UIMenu(children: [
-//            UIAction(title: "Selecione o seu gênero", state: .on, handler: optionClosure),
-//            UIAction(title: "Masculino", handler: optionClosure),
-//            UIAction(title: "Feminino", handler: optionClosure),
-//            UIAction(title: "Prefiro não informar", handler: optionClosure),
-//        ])
-//        button.showsMenuAsPrimaryAction = true
-//        button.changesSelectionAsPrimaryAction = true
-//        return button
-//    }()
-//
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
@@ -128,7 +103,6 @@ class PersonalDataView: ViewDefault {
     
     @objc private func nextButtonTap() {
         onNextTap?()
-        print("Hey")
     }
     
     

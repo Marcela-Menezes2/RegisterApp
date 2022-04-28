@@ -18,7 +18,7 @@ class RegisterCoordinator: Coordinator {
     func start() {
         let viewController = RegisterViewController()
         
-            viewController.onNextTap = {
+            viewController.onNextTap = {userVidewModel in
                 self.nextView()
             }
             
