@@ -28,4 +28,18 @@ extension UIColor {
         return UIColor(named: "textFieldBorderColor")!.cgColor
     }
     
+    static var viewBorderColor: UIColor {
+        return UIColor(named: "viewBorderColor")!
+    }
+    
+    static var viewBlueColor: UIColor {
+        return UIColor(named: "viewBlueColor")!
+    }
+    static var grayColor: UIColor {
+        return UIColor(named: "grayColor")!
+    }
+    
+    static var greenColor: UIColor {
+        return UIColor(named: "greenColor")!
+    }
 }

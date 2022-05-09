@@ -4,28 +4,58 @@
 //
 //  Created by Marcela Menezes Silva on 20/04/22.
 //
-import Foundation
+
 import UIKit
 
 class AddressCoordinator: Coordinator {
-    var navigationController: UINavigationController
+    let navigationController: UINavigationController
+    let coordinatorViewModel: CoordinatorViewModel
     
-    init (navigationController: UINavigationController) {
+    init(navigationController: UINavigationController,
+         coordinatorViewModel: CoordinatorViewModel) {
         self.navigationController = navigationController
+        self.coordinatorViewModel = coordinatorViewModel
     }
-
+    
     func start() {
         let viewController = AddressViewController()
-        
-            viewController.onNextTap = {
-                self.nextView()
-            }
-            
-            self.navigationController.pushViewController(viewController, animated: true)
+        viewController.onSave = { addressViewModel in
+            self.coordinatorViewModel.addressViewModel = addressViewModel
+            self.startResumeViewController()
         }
         
-        private func nextView() {
-            let coordinator = ReviewCoordinator(navigationController: self.navigationController)
-            coordinator.start()
-        }
+        self.navigationController.pushViewController(viewController, animated: true)
     }
+    
+    private func startResumeViewController() {
+        let coordinator = ResumeCoordinator(navigationController: self.navigationController, coordinatorViewModel: self.coordinatorViewModel)
+        
+        coordinator.start()
+    }
+}
+
+//import Foundation
+//import UIKit
+//
+//class AddressCoordinator: Coordinator {
+//    var navigationController: UINavigationController
+//
+//    init (navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
+//
+//    func start() {
+//        let viewController = AddressViewController()
+//
+//            viewController.onNextTap = {
+//                self.nextView()
+//            }
+//
+//            self.navigationController.pushViewController(viewController, animated: true)
+//        }
+//
+//        private func nextView() {
+//            let coordinator = ResumeCoordinator(navigationController: self.navigationController)
+//            coordinator.start()
+//        }
+//    }

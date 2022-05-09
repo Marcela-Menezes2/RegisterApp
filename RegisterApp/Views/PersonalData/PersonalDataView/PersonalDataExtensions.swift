@@ -20,7 +20,7 @@ extension PersonalDataView: UITextFieldDelegate {
             
             textField.text = String(textField.text!.prefix(14))
         }
-        if textField == telefoneTextField {
+        if textField == phoneTextField {
             
             if (textField.text?.count ?? 0) < 14 {
                 textField.layer.borderColor = UIColor.red.cgColor
@@ -43,7 +43,7 @@ extension PersonalDataView: UITextFieldDelegate {
             }
         }
         
-        if textField == telefoneTextField {
+        if textField == phoneTextField {
             if !string.isBackspace {
                 if range.location == 0 {
                     textField.text = textField.text! + "("

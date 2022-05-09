@@ -10,18 +10,21 @@ import UIKit
 class PersonalDataView: ViewDefault {
     
     // MARK: Closures
-    var onNextTap: (() -> Void)?
+   var onNextTap: (() -> Void)?
+    var onSaveProfile: ((_ personalDataViewModel: PersonalDataViewModel) -> Void)?
     
+    
+    // MARK: Elements Views
     lazy var subTitleLabel = SubLabel(subLabel: " Personal data ")
-    lazy var idadeLabel = IdadeLabel(idadeLabel: "Idade:")
+    lazy var idadeLabel = userLabel(idadeLabel: "Idade:")
     lazy var telefoneLabel = TelefoneLabel(telefoneLabel: "Tel:")
-    lazy var telefoneTextField: TextFieldDefault = {
+    lazy var phoneTextField: TextFieldDefault = {
         let tf = TextFieldDefault(placeholder: " Digite o telefone + DDD")
         tf.keyboardType = .numberPad
         return tf
     }()
     lazy var nextButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Próximo")
+        let bt = ButtonDefault(setTitle: "Salvar")
         bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt
@@ -29,7 +32,7 @@ class PersonalDataView: ViewDefault {
     
     lazy var ageTextField = TextFieldDefault(placeholder: "  Selecione sua idade")
     lazy var agePickerView:ToolbarPickerView = {
-        
+    
         let picker = ToolbarPickerView()
         picker.translatesAutoresizingMaskIntoConstraints = false
         
@@ -98,19 +101,31 @@ class PersonalDataView: ViewDefault {
     
     private func setTextFields() {
         cpfTextField.delegate = self
-        telefoneTextField.delegate = self
+        phoneTextField.delegate = self
+    }
+    
+    @objc private func saveProfileTap() {
+        let age = ageTextField.text ?? String.empty
+        let gender = genderTextField.text ?? String.empty
+        let cpf = cpfTextField.text ?? String.empty
+        let phone = phoneTextField.text ?? String.empty
+        
+        let personalDataViewModel = PersonalDataViewModel(age: age,
+                                                gender: gender,
+                                                cpf: cpf,
+                                                phone: phone)
+        
+        onSaveProfile?(personalDataViewModel)
     }
     
     @objc private func nextButtonTap() {
-        onNextTap?()
+        
     }
-    
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
         
     }
-}
+
 //
 //import SwiftUI
 //import UIViewCanvas
@@ -121,4 +136,4 @@ class PersonalDataView: ViewDefault {
 //    }
 //}
 
-
+}

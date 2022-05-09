@@ -47,7 +47,7 @@ class SubLabel: UILabel{
     
 }
 
-class IdadeLabel: UILabel {
+class userLabel: UILabel {
     init(idadeLabel: String){
         super.init(frame: .zero)
         initDefault(idadeLabel: idadeLabel)

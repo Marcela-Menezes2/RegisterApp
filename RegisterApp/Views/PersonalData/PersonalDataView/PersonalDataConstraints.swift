@@ -93,12 +93,12 @@ extension PersonalDataView {
     }
     
     private func setTelefoneTextField() {
-        self.addSubview(telefoneTextField)
+        self.addSubview(phoneTextField)
         NSLayoutConstraint.activate([
-            telefoneTextField.topAnchor.constraint(equalTo: self.cpfTextField.topAnchor, constant: 70),
-            telefoneTextField.leftAnchor.constraint(equalTo: self.telefoneLabel.leftAnchor, constant: 60),
-            telefoneTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            telefoneTextField.heightAnchor.constraint(equalToConstant: 35)
+            phoneTextField.topAnchor.constraint(equalTo: self.cpfTextField.topAnchor, constant: 70),
+            phoneTextField.leftAnchor.constraint(equalTo: self.telefoneLabel.leftAnchor, constant: 60),
+            phoneTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            phoneTextField.heightAnchor.constraint(equalToConstant: 35)
         ])
     }
     

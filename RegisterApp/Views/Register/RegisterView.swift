@@ -10,7 +10,9 @@ import UIKit
 class RegisterView: ViewDefault {
     
     // MARK: Closures
-    var onNextTap: ((_ userViewModel: UserViewModel) -> Void)?
+    var onRegisterTap: ((_ userVideModel: UserViewModel) -> Void)?
+    var onLoginTap: (() -> Void)?
+//    var onNextTap: ((_ userViewModel: UserViewModel) -> Void)?
     var onPasswordWrong: (()->Void)?
     
     lazy var subTitleLabel = SubLabel(subLabel: "Login data ")
@@ -18,7 +20,7 @@ class RegisterView: ViewDefault {
     lazy var emailTextField = TextFieldDefault(placeholder: "  Email ")
     lazy var passwordTextField = TextFieldDefault(placeholder: "  Password ", isSecureTextEntry: true)
     lazy var nextButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Próximo")
+        let bt = ButtonDefault(setTitle: "Salvar")
         bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt
@@ -37,7 +39,7 @@ class RegisterView: ViewDefault {
         //        onNextTap?()
         let userViewModel = UserViewModel(model: UserModel(id: 0, email: emailTextField.text ?? String.empty, password: passwordTextField.text ?? String.empty))
         
-        onNextTap?(userViewModel)
+        onRegisterTap?(userViewModel)
     }
     
     

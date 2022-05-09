@@ -13,7 +13,7 @@ class AddressView: ViewDefault {
     var onNextTap: (()  -> Void)?
     
     lazy var subTitleLabel = SubLabel(subLabel: " Address Data ")
-    lazy var ruaLabel = IdadeLabel(idadeLabel: "Rua:")
+    lazy var ruaLabel = userLabel(idadeLabel: "Rua:")
     lazy var ruaTextField = TextFieldDefault(placeholder: "  Insira sua resposta ")
     lazy var numeroLabel = NumeroLabel(numeroLabel: " N°:")
     lazy var numeroTextField = TextFieldDefault(placeholder: "  Digite aqui - S/N ")
@@ -102,12 +102,12 @@ class AddressView: ViewDefault {
     
 }
 
-import SwiftUI
-import UIViewCanvas
-
-struct MyPreview: PreviewProvider {
-    static var previews: some View {
-        ViewCanvas(for: AddressView())
-    }
-}
-
+//import SwiftUI
+//import UIViewCanvas
+//
+//struct MyPreview: PreviewProvider {
+//    static var previews: some View {
+//        ViewCanvas(for: AddressView())
+//    }
+//}
+//
