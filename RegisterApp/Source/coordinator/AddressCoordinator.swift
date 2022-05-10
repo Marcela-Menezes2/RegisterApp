@@ -19,7 +19,7 @@ class AddressCoordinator: Coordinator {
     
     func start() {
         let viewController = AddressViewController()
-        viewController.onSave = { addressViewModel in
+        viewController.onSaveTap = { addressViewModel in
             self.coordinatorViewModel.addressViewModel = addressViewModel
             self.startResumeViewController()
         }

@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-class HomeView: ViewDefault {
+class TransactionView: ViewDefault {
     
     lazy var titleLabel = LabelDefault(titleLabel: "Meus gastos ")
     lazy var subTitle = SubLabel(subLabel: " R$ 3000,00")
     lazy var descriptionLabel = userLabel(idadeLabel: " Entradas esse mês")
     lazy var textTitle = SubLabel(subLabel: " R$ 180,00")
     lazy var descriptLabel = userLabel(idadeLabel: " Saídas esse mês")
-    lazy var tabBar = TabBarController()
+
     
     lazy var iconButton: ButtonDefault = {
          let bt = ButtonDefault(setTitle: "")
@@ -84,13 +84,13 @@ class HomeView: ViewDefault {
     }
 }
 
-import SwiftUI
-import UIViewCanvas
-
-struct MyPreview: PreviewProvider {
-    static var previews: some View {
-        ViewCanvas(for: HomeView())
-    }
-}
-
-
+//import SwiftUI
+//import UIViewCanvas
+//
+//struct MyPreview: PreviewProvider {
+//    static var previews: some View {
+//        ViewCanvas(for: TransactionView())
+//    }
+//}
+//
+//

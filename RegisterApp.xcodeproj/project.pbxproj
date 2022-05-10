@@ -29,7 +29,6 @@
 		AD48F271281C53C20071947B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48F270281C53C20071947B /* LoginViewController.swift */; };
 		AD48F273281C54280071947B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48F272281C54280071947B /* LoginCoordinator.swift */; };
 		AD48F275281C54690071947B /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48F274281C54690071947B /* KeychainHelper.swift */; };
-		AD4EEAB8281841100088CF68 /* ReviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAB7281841100088CF68 /* ReviewCoordinator.swift */; };
 		AD4EEABA281842DA0088CF68 /* PersonalDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAB9281842DA0088CF68 /* PersonalDataCoordinator.swift */; };
 		AD4EEABF28185A2F0088CF68 /* RegExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEABE28185A2F0088CF68 /* RegExp.swift */; };
 		AD4EEAC228185A880088CF68 /* ConstantsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAC128185A880088CF68 /* ConstantsColor.swift */; };
@@ -43,17 +42,17 @@
 		AD4EEAD4281863A80088CF68 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4EEAD3281863A80088CF68 /* UIColor+.swift */; };
 		AD4F79B428241CA500387BD1 /* CoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F79B328241CA500387BD1 /* CoordinatorViewModel.swift */; };
 		AD4F79B628241CD300387BD1 /* AdressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F79B528241CD300387BD1 /* AdressViewModel.swift */; };
+		AD87DB08282AADD9001D8C7F /* CategoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD87DB07282AADD9001D8C7F /* CategoryCoordinator.swift */; };
+		AD87DB0B282AAF27001D8C7F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD87DB0A282AAF27001D8C7F /* CategoryViewController.swift */; };
+		AD87DB0E282AAF95001D8C7F /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD87DB0D282AAF95001D8C7F /* HomeTabBarController.swift */; };
+		AD87DB10282AB197001D8C7F /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD87DB0F282AB197001D8C7F /* TabBarCoordinator.swift */; };
+		AD87DB12282ADB82001D8C7F /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD87DB11282ADB82001D8C7F /* AddressModel.swift */; };
 		ADC0402E281C551F0058B0AF /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0402D281C551F0058B0AF /* UIViewController+.swift */; };
 		ADC04031281C55710058B0AF /* ResumeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC04030281C55710058B0AF /* ResumeCoordinator.swift */; };
 		ADCA6CA12821A97C003A2967 /* PersonalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA6CA02821A97C003A2967 /* PersonalDataModel.swift */; };
 		ADCA6CA32821A9DE003A2967 /* PersonalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA6CA22821A9DE003A2967 /* PersonalDataViewModel.swift */; };
-		ADD340A52829449600DB09C8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A42829449600DB09C8 /* HomeView.swift */; };
-		ADD340A728294EE600DB09C8 /* HomeViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A628294EE600DB09C8 /* HomeViewConstraints.swift */; };
-		ADD340A928295A5200DB09C8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A828295A5200DB09C8 /* TabBarController.swift */; };
-		ADD340AB28295C9000DB09C8 /* LançamentosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340AA28295C9000DB09C8 /* LançamentosViewController.swift */; };
-		ADD340AD28295D3700DB09C8 /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340AC28295D3700DB09C8 /* CategoriasViewController.swift */; };
-		ADD340AF2829672200DB09C8 /* LançamentosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340AE2829672200DB09C8 /* LançamentosView.swift */; };
-		ADD340B12829673500DB09C8 /* CategoriasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340B02829673500DB09C8 /* CategoriasView.swift */; };
+		ADD340A52829449600DB09C8 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A42829449600DB09C8 /* TransactionView.swift */; };
+		ADD340A728294EE600DB09C8 /* TransactionViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A628294EE600DB09C8 /* TransactionViewConstraints.swift */; };
 		ADE67210281AD597009FF144 /* CEPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6720F281AD597009FF144 /* CEPModel.swift */; };
 		ADE67214281AD62D009FF144 /* CEPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67213281AD62D009FF144 /* CEPViewModel.swift */; };
 		ADE67217281AD70D009FF144 /* CEPProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE67216281AD70D009FF144 /* CEPProvider.swift */; };
@@ -68,8 +67,8 @@
 		ADF7B423281995D400B0B31D /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B422281995D400B0B31D /* ViewDefault.swift */; };
 		ADF7B4252819977C00B0B31D /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B4242819977C00B0B31D /* ViewControllerDefault.swift */; };
 		ADF7B427281998A300B0B31D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7B426281998A300B0B31D /* UIView+.swift */; };
-		ADFA5C3B28255680008DE502 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA5C3A28255680008DE502 /* HomeCoordinator.swift */; };
-		ADFA5C3E282556E9008DE502 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA5C3D282556E9008DE502 /* HomeViewController.swift */; };
+		ADFA5C3B28255680008DE502 /* TransactionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA5C3A28255680008DE502 /* TransactionCoordinator.swift */; };
+		ADFA5C3E282556E9008DE502 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA5C3D282556E9008DE502 /* TransactionViewController.swift */; };
 		ADFA6109280EEFD50008EBA7 /* ButtomDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */; };
 		ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */; };
 		ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */; };
@@ -105,7 +104,6 @@
 		AD48F270281C53C20071947B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD48F272281C54280071947B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		AD48F274281C54690071947B /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
-		AD4EEAB7281841100088CF68 /* ReviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCoordinator.swift; sourceTree = "<group>"; };
 		AD4EEAB9281842DA0088CF68 /* PersonalDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCoordinator.swift; sourceTree = "<group>"; };
 		AD4EEABE28185A2F0088CF68 /* RegExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegExp.swift; sourceTree = "<group>"; };
 		AD4EEAC128185A880088CF68 /* ConstantsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsColor.swift; sourceTree = "<group>"; };
@@ -119,17 +117,17 @@
 		AD4EEAD3281863A80088CF68 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		AD4F79B328241CA500387BD1 /* CoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewModel.swift; sourceTree = "<group>"; };
 		AD4F79B528241CD300387BD1 /* AdressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressViewModel.swift; sourceTree = "<group>"; };
+		AD87DB07282AADD9001D8C7F /* CategoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoordinator.swift; sourceTree = "<group>"; };
+		AD87DB0A282AAF27001D8C7F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		AD87DB0D282AAF95001D8C7F /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		AD87DB0F282AB197001D8C7F /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		AD87DB11282ADB82001D8C7F /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		ADC0402D281C551F0058B0AF /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		ADC04030281C55710058B0AF /* ResumeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeCoordinator.swift; sourceTree = "<group>"; };
 		ADCA6CA02821A97C003A2967 /* PersonalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataModel.swift; sourceTree = "<group>"; };
 		ADCA6CA22821A9DE003A2967 /* PersonalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewModel.swift; sourceTree = "<group>"; };
-		ADD340A42829449600DB09C8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		ADD340A628294EE600DB09C8 /* HomeViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewConstraints.swift; sourceTree = "<group>"; };
-		ADD340A828295A5200DB09C8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		ADD340AA28295C9000DB09C8 /* LançamentosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LançamentosViewController.swift"; sourceTree = "<group>"; };
-		ADD340AC28295D3700DB09C8 /* CategoriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
-		ADD340AE2829672200DB09C8 /* LançamentosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LançamentosView.swift"; sourceTree = "<group>"; };
-		ADD340B02829673500DB09C8 /* CategoriasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasView.swift; sourceTree = "<group>"; };
+		ADD340A42829449600DB09C8 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		ADD340A628294EE600DB09C8 /* TransactionViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewConstraints.swift; sourceTree = "<group>"; };
 		ADE6720F281AD597009FF144 /* CEPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPModel.swift; sourceTree = "<group>"; };
 		ADE67213281AD62D009FF144 /* CEPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPViewModel.swift; sourceTree = "<group>"; };
 		ADE67216281AD70D009FF144 /* CEPProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPProvider.swift; sourceTree = "<group>"; };
@@ -144,8 +142,8 @@
 		ADF7B422281995D400B0B31D /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		ADF7B4242819977C00B0B31D /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		ADF7B426281998A300B0B31D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		ADFA5C3A28255680008DE502 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		ADFA5C3D282556E9008DE502 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ADFA5C3A28255680008DE502 /* TransactionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCoordinator.swift; sourceTree = "<group>"; };
+		ADFA5C3D282556E9008DE502 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomDefault.swift; sourceTree = "<group>"; };
 		ADFA610B280F3DF90008EBA7 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
 		ADFA610D280F3E100008EBA7 /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				AD424AAD280DCE7C00555A6E /* Delegate's */,
-				ADD340B228296ADF00DB09C8 /* TabBar */,
 				ADE6721F281B0FC6009FF144 /* Views */,
 				AD424AAC280DCE4700555A6E /* ViewControllers */,
 				AD424A9B280DCD0800555A6E /* Main.storyboard */,
@@ -272,7 +269,9 @@
 		AD424AAC280DCE4700555A6E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ADFA5C3C282556D2008DE502 /* Home */,
+				AD87DB0C282AAF78001D8C7F /* TabBar */,
+				AD87DB09282AAE84001D8C7F /* Category */,
+				ADFA5C3C282556D2008DE502 /* Transaction */,
 				AD48F26F281C539E0071947B /* LoginViewController */,
 				AD3797422816E4D3004420E3 /* ResumeViewController */,
 				AD3797372816C448004420E3 /* AddressVewController */,
@@ -350,25 +349,29 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		ADD340A32829446200DB09C8 /* Home */ = {
+		AD87DB09282AAE84001D8C7F /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				ADD340A42829449600DB09C8 /* HomeView.swift */,
-				ADD340A628294EE600DB09C8 /* HomeViewConstraints.swift */,
+				AD87DB0A282AAF27001D8C7F /* CategoryViewController.swift */,
 			);
-			path = Home;
+			path = Category;
 			sourceTree = "<group>";
 		};
-		ADD340B228296ADF00DB09C8 /* TabBar */ = {
+		AD87DB0C282AAF78001D8C7F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				ADD340A828295A5200DB09C8 /* TabBarController.swift */,
-				ADD340AA28295C9000DB09C8 /* LançamentosViewController.swift */,
-				ADD340AC28295D3700DB09C8 /* CategoriasViewController.swift */,
-				ADD340AE2829672200DB09C8 /* LançamentosView.swift */,
-				ADD340B02829673500DB09C8 /* CategoriasView.swift */,
+				AD87DB0D282AAF95001D8C7F /* HomeTabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		ADD340A32829446200DB09C8 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				ADD340A42829449600DB09C8 /* TransactionView.swift */,
+				ADD340A628294EE600DB09C8 /* TransactionViewConstraints.swift */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		ADE67211281AD5AF009FF144 /* Model */ = {
@@ -377,6 +380,7 @@
 				ADE6720F281AD597009FF144 /* CEPModel.swift */,
 				ADE6721A281AF750009FF144 /* UserModel.swift */,
 				ADCA6CA02821A97C003A2967 /* PersonalDataModel.swift */,
+				AD87DB11282ADB82001D8C7F /* AddressModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -415,7 +419,7 @@
 		ADE6721F281B0FC6009FF144 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ADD340A32829446200DB09C8 /* Home */,
+				ADD340A32829446200DB09C8 /* Transaction */,
 				AD48F26A281C51230071947B /* LoginView */,
 				AD424AA9280DCD4200555A6E /* Register */,
 				ADFED5D428108EB500F3BDFA /* PersonalData */,
@@ -436,12 +440,12 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		ADFA5C3C282556D2008DE502 /* Home */ = {
+		ADFA5C3C282556D2008DE502 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
-				ADFA5C3D282556E9008DE502 /* HomeViewController.swift */,
+				ADFA5C3D282556E9008DE502 /* TransactionViewController.swift */,
 			);
-			path = Home;
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		ADFA610A280EF7DC0008EBA7 /* Componentes */ = {
@@ -479,14 +483,15 @@
 		ADFED5CA281074F600F3BDFA /* coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				AD87DB07282AADD9001D8C7F /* CategoryCoordinator.swift */,
 				ADFED5CB2810754700F3BDFA /* Coordinator.swift */,
+				AD48F272281C54280071947B /* LoginCoordinator.swift */,
 				ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */,
 				AD4EEAB9281842DA0088CF68 /* PersonalDataCoordinator.swift */,
 				ADFED5CF28107B6500F3BDFA /* AddressCoordinator.swift */,
-				AD4EEAB7281841100088CF68 /* ReviewCoordinator.swift */,
-				AD48F272281C54280071947B /* LoginCoordinator.swift */,
 				ADC04030281C55710058B0AF /* ResumeCoordinator.swift */,
-				ADFA5C3A28255680008DE502 /* HomeCoordinator.swift */,
+				ADFA5C3A28255680008DE502 /* TransactionCoordinator.swift */,
+				AD87DB0F282AB197001D8C7F /* TabBarCoordinator.swift */,
 			);
 			path = coordinator;
 			sourceTree = "<group>";
@@ -594,10 +599,9 @@
 				AD4EEABF28185A2F0088CF68 /* RegExp.swift in Sources */,
 				ADF7B427281998A300B0B31D /* UIView+.swift in Sources */,
 				AD3797412816E471004420E3 /* ResumeViewConstraints.swift in Sources */,
-				ADD340AF2829672200DB09C8 /* LançamentosView.swift in Sources */,
 				AD03D76B281475540079E249 /* AddressViewController.swift in Sources */,
 				ADE67210281AD597009FF144 /* CEPModel.swift in Sources */,
-				ADD340A52829449600DB09C8 /* HomeView.swift in Sources */,
+				ADD340A52829449600DB09C8 /* TransactionView.swift in Sources */,
 				ADFA610E280F3E100008EBA7 /* PersonalDataView.swift in Sources */,
 				AD03D7652814694C0079E249 /* PersonalDataConstraints.swift in Sources */,
 				AD4F79B628241CD300387BD1 /* AdressViewModel.swift in Sources */,
@@ -605,39 +609,39 @@
 				AD424A9A280DCD0800555A6E /* RegisterViewController.swift in Sources */,
 				AD424AAF280DE33C00555A6E /* TextfieldDefault.swift in Sources */,
 				ADCA6CA12821A97C003A2967 /* PersonalDataModel.swift in Sources */,
-				ADFA5C3B28255680008DE502 /* HomeCoordinator.swift in Sources */,
+				ADFA5C3B28255680008DE502 /* TransactionCoordinator.swift in Sources */,
 				AD4EEAD22818622A0088CF68 /* Formatter+.swift in Sources */,
 				ADFED5CE2810757800F3BDFA /* RegisterCoordinator.swift in Sources */,
 				ADC04031281C55710058B0AF /* ResumeCoordinator.swift in Sources */,
 				AD48F26E281C53710071947B /* LoginViewConstraints.swift in Sources */,
-				ADFA5C3E282556E9008DE502 /* HomeViewController.swift in Sources */,
+				ADFA5C3E282556E9008DE502 /* TransactionViewController.swift in Sources */,
 				AD4EEAC92818606D0088CF68 /* AgeEnums.swift in Sources */,
 				ADE6721D281AFCFF009FF144 /* UserProvider.swift in Sources */,
 				AD4EEAC628185F510088CF68 /* ToolBarPicketView.swift in Sources */,
 				ADF7B42128198B8300B0B31D /* ScrollView+.swift in Sources */,
 				AD4EEAC228185A880088CF68 /* ConstantsColor.swift in Sources */,
 				AD379748281703C0004420E3 /* States.swift in Sources */,
+				AD87DB0B282AAF27001D8C7F /* CategoryViewController.swift in Sources */,
 				AD37973F2816E38E004420E3 /* ResumeView.swift in Sources */,
 				ADE67214281AD62D009FF144 /* CEPViewModel.swift in Sources */,
-				ADD340B12829673500DB09C8 /* CategoriasView.swift in Sources */,
 				AD3797442816E4F0004420E3 /* ResumeViewController.swift in Sources */,
 				AD4EEABA281842DA0088CF68 /* PersonalDataCoordinator.swift in Sources */,
-				ADD340AD28295D3700DB09C8 /* CategoriasViewController.swift in Sources */,
+				AD87DB10282AB197001D8C7F /* TabBarCoordinator.swift in Sources */,
 				ADFA610C280F3DF90008EBA7 /* PersonalDataVC.swift in Sources */,
 				ADFED5D028107B6500F3BDFA /* AddressCoordinator.swift in Sources */,
 				AD3797392816C4BB004420E3 /* AddressConstraints.swift in Sources */,
 				AD4EEACB281861500088CF68 /* PersonalDataExtensions.swift in Sources */,
 				AD48F26C281C513C0071947B /* LoginView.swift in Sources */,
-				ADD340A928295A5200DB09C8 /* TabBarController.swift in Sources */,
+				AD87DB0E282AAF95001D8C7F /* HomeTabBarController.swift in Sources */,
 				ADE67221281B1962009FF144 /* AddressExtensions.swift in Sources */,
 				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
+				AD87DB12282ADB82001D8C7F /* AddressModel.swift in Sources */,
 				ADF7B41F281987F900B0B31D /* StringProtocol+.swift in Sources */,
 				AD4EEACE281861CB0088CF68 /* String+.swift in Sources */,
-				ADD340AB28295C9000DB09C8 /* LançamentosViewController.swift in Sources */,
 				ADCA6CA32821A9DE003A2967 /* PersonalDataViewModel.swift in Sources */,
 				ADE67217281AD70D009FF144 /* CEPProvider.swift in Sources */,
 				ADF7B41B281984DD00B0B31D /* GenderEnums.swift in Sources */,
-				ADD340A728294EE600DB09C8 /* HomeViewConstraints.swift in Sources */,
+				ADD340A728294EE600DB09C8 /* TransactionViewConstraints.swift in Sources */,
 				ADC0402E281C551F0058B0AF /* UIViewController+.swift in Sources */,
 				AD4F79B428241CA500387BD1 /* CoordinatorViewModel.swift in Sources */,
 				AD48F271281C53C20071947B /* LoginViewController.swift in Sources */,
@@ -645,9 +649,9 @@
 				ADFED5C728106CCA00F3BDFA /* RegisterViewConstraints.swift in Sources */,
 				AD4EEAD4281863A80088CF68 /* UIColor+.swift in Sources */,
 				AD424AB1280DEAF500555A6E /* LabelDefault.swift in Sources */,
-				AD4EEAB8281841100088CF68 /* ReviewCoordinator.swift in Sources */,
 				ADF7B4252819977C00B0B31D /* ViewControllerDefault.swift in Sources */,
 				AD03D7682814747F0079E249 /* AddressView.swift in Sources */,
+				AD87DB08282AADD9001D8C7F /* CategoryCoordinator.swift in Sources */,
 				AD48F275281C54690071947B /* KeychainHelper.swift in Sources */,
 				AD424A96280DCD0800555A6E /* AppDelegate.swift in Sources */,
 				AD4EEAC428185ADC0088CF68 /* RegisterViewDelegate.swift in Sources */,

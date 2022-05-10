@@ -11,6 +11,7 @@ class AddressView: ViewDefault {
     
     // MARK: Closures
     var onNextTap: (()  -> Void)?
+    var onSaveTap : ((_ addressViewModel: AddressViewModel) -> Void)?
     
     lazy var subTitleLabel = SubLabel(subLabel: " Address Data ")
     lazy var ruaLabel = userLabel(idadeLabel: "Rua:")
@@ -62,7 +63,7 @@ class AddressView: ViewDefault {
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Próximo")
         bt.backgroundColor = .buttonBackgroundColor
-        bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
+        bt.addTarget(self, action: #selector(saveProfileTap), for: .touchUpInside)
         return bt
     }()
     
@@ -82,6 +83,18 @@ class AddressView: ViewDefault {
             self.updateCamp(cepModel: viewModel)
             print(viewModel)
         }
+    }
+    
+    @objc private func saveProfileTap() {
+       
+        let addressViewModel = AddressViewModel(cep: cepTextField.text ?? String.empty,
+                                                street: ruaTextField.text ?? String.empty,
+                                                number: numeroTextField.text ?? String.empty,
+                                                district: bairroTextField.text ?? String.empty,
+                                                city: cidadeTextField.text ?? String.empty,
+                                                uf: ufTextField.text ?? String.empty)
+        
+        onSaveTap?(addressViewModel)
     }
     @objc private func nextButtonTap() {
         onNextTap?()

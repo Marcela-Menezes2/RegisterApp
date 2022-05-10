@@ -23,6 +23,17 @@ struct PersonalDataViewModel {
     var age: String {
         model.age
     }
+    var gender: String {
+        model.gender
+    }
+    
+    var cpf: String {
+        model.cpf
+    }
+    
+    var phone: String {
+        model.phone
+    }
 }
 
 //import Foundation

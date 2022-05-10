@@ -11,7 +11,7 @@ class PersonalDataView: ViewDefault {
     
     // MARK: Closures
    var onNextTap: (() -> Void)?
-    var onSaveProfile: ((_ personalDataViewModel: PersonalDataViewModel) -> Void)?
+   var onSaveProfile: ((_ personalDataViewModel: PersonalDataViewModel) -> Void)?
     
     
     // MARK: Elements Views
@@ -26,7 +26,7 @@ class PersonalDataView: ViewDefault {
     lazy var nextButton: ButtonDefault = {
         let bt = ButtonDefault(setTitle: "Salvar")
         bt.backgroundColor = .buttonBackgroundColor
-        bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
+        bt.addTarget(self, action: #selector(saveProfileTap), for: .touchUpInside)
         return bt
     }()
     

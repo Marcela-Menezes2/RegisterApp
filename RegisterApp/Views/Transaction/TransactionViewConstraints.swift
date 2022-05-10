@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension HomeView {
+extension TransactionView {
     func setUIElements() {
         setSubTitle()
         setIconButton()
@@ -26,8 +26,8 @@ extension HomeView {
         self.addSubview(iconButton)
         
         NSLayoutConstraint.activate([
-            iconButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-            iconButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            iconButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+            iconButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             iconButton.heightAnchor.constraint(equalToConstant: 40),
             iconButton.widthAnchor.constraint(equalToConstant: 40)
         ])
