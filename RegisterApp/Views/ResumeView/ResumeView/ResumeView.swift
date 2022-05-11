@@ -30,7 +30,7 @@ class ResumeView: ViewDefault {
     
     init(withCoordinatorViewModel coordinatorViewModel: CoordinatorViewModel) {
         self.coordinatorViewModel = coordinatorViewModel
-
+        
         super.init(frame: .zero)
         
         self.setElementsView()
@@ -62,11 +62,11 @@ class ResumeView: ViewDefault {
         labelCPF.text = "Seu CPF: \(self.coordinatorViewModel.personalDataViewModel?.cpf ?? String.empty)"
         labelPhone.text = "Seu Telefone: \(self.coordinatorViewModel.personalDataViewModel?.phone ?? String.empty)"
         labelCEP.text = "Seu CEP: \(self.coordinatorViewModel.addressViewModel?.cep ?? String.empty)"
-        labelStreet.text = "Sua Rua: \(self.coordinatorViewModel.addressViewModel?.cep ?? String.empty)"
-        labelNumber.text = "Seu Número: \(self.coordinatorViewModel.addressViewModel?.cep ?? String.empty)"
-        labelDistrict.text = "Seu Bairro: \(self.coordinatorViewModel.addressViewModel?.cep ?? String.empty)"
-        labelCity.text = "Sua Cidade: \(self.coordinatorViewModel.addressViewModel?.cep ?? String.empty)"
-        labelUF.text = "Seu Estado: \(self.coordinatorViewModel.addressViewModel?.cep ?? String.empty)"
+        labelStreet.text = "Sua Rua: \(self.coordinatorViewModel.addressViewModel?.street ?? String.empty)"
+        labelNumber.text = "Seu Número: \(self.coordinatorViewModel.addressViewModel?.number ?? String.empty)"
+        labelDistrict.text = "Seu Bairro: \(self.coordinatorViewModel.addressViewModel?.district ?? String.empty)"
+        labelCity.text = "Sua Cidade: \(self.coordinatorViewModel.addressViewModel?.city ?? String.empty)"
+        labelUF.text = "Seu Estado: \(self.coordinatorViewModel.addressViewModel?.uf ?? String.empty)"
     }
     
     private func setLabelAge() {
@@ -196,47 +196,4 @@ class ResumeView: ViewDefault {
         onGoHome?()
     }
 }
-
-
-//class ReviewDataView: ViewDefault{
-//    
-//    // MARK: Closures
-//    var onNextTap: (() -> Void)?
-//    
-//    lazy var titleLabel = LabelDefault(titleLabel: "Register ")
-//    lazy var subTitleLabel = SubLabel(subLabel: " Data for review ")
-//    lazy var nextButton: ButtonDefault = {
-//        let bt = ButtonDefault(setTitle: "Salvar")
-//        bt.backgroundColor = .buttonBackgroundColor
-//        bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
-//        return bt
-//    }()
-//    
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        backgroundColor = .white
-//        
-//        setUIElements()
-//    }
-//    @objc private func nextButtonTap() {
-//        onNextTap?()
-//        print("Hey")
-//    }
-//    
-//    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//        
-//    }
-//    
-//}
-//
-//import SwiftUI
-//import UIViewCanvas
-//
-//struct MyPreview: PreviewProvider {
-//    static var previews: some View {
-//        ViewCanvas(for: ReviewDataView())
-//    }
-//}
 

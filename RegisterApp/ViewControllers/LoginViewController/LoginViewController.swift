@@ -27,7 +27,7 @@ class LoginViewController : ViewControllerDefault {
         
         return view
     }()
-
+    
     override func loadView() {
         self.view = self.loginView
     }
@@ -36,8 +36,8 @@ class LoginViewController : ViewControllerDefault {
         super.viewDidLoad()
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        self.navigationController?.isNavigationBarHidden = true
-//    }
+    //    override func viewWillAppear(_ animated: Bool) {
+    //        self.navigationController?.isNavigationBarHidden = true
+    //    }
 }
 

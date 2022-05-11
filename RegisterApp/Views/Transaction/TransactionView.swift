@@ -15,15 +15,15 @@ class TransactionView: ViewDefault {
     lazy var descriptionLabel = userLabel(idadeLabel: " Entradas esse mês")
     lazy var textTitle = SubLabel(subLabel: " R$ 180,00")
     lazy var descriptLabel = userLabel(idadeLabel: " Saídas esse mês")
-
+    
     
     lazy var iconButton: ButtonDefault = {
-         let bt = ButtonDefault(setTitle: "")
+        let bt = ButtonDefault(setTitle: "")
         bt.setImage(UIImage(systemName: "plus.circle"), for: .normal)
         bt.backgroundColor = .white
         bt.translatesAutoresizingMaskIntoConstraints = false
         bt.tintColor = .greenColor
-//        bt.addTarget(self, action: #selector(buscaCEPButtonTAP), for: .touchUpInside)
+        //        bt.addTarget(self, action: #selector(buscaCEPButtonTAP), for: .touchUpInside)
         
         return bt
     }()
@@ -36,40 +36,19 @@ class TransactionView: ViewDefault {
         return mySegmentControl
     }()
     
-    lazy var blueView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .viewBlueColor
-        view.layer.cornerRadius = 8
+    lazy var inputsView: ViewInputOutput = {
+        let view = ViewInputOutput(typeEntry: .Input)
+        view.setValue(value: 111113500)
+        view.layer.cornerRadius = 25
         return view
     }()
     
-    lazy var pinkView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .viewBorderColor
-        view.layer.cornerRadius = 8
+    lazy var outputsView: ViewInputOutput = {
+        let view = ViewInputOutput(typeEntry: .Output)
+        view.setValue(value: 562312)
+        view.layer.cornerRadius = 25
         return view
     }()
-    
-    lazy var circleImage: UIImageView = {
-        let imagem = UIImageView()
-        imagem.translatesAutoresizingMaskIntoConstraints = false
-        imagem.image = UIImage(systemName: "arrow.down.circle.fill")
-        imagem.tintColor = .black
-        imagem.backgroundColor = .viewBlueColor
-        return imagem
-    }()
-    
-    lazy var setaImage: UIImageView = {
-        let imagem = UIImageView()
-        imagem.translatesAutoresizingMaskIntoConstraints = false
-        imagem.image = UIImage(systemName: "arrow.up.circle.fill")
-        imagem.tintColor = .black
-        imagem.backgroundColor = .viewBorderColor
-        return imagem
-    }()
-    
     
     
     override init(frame: CGRect) {
@@ -77,7 +56,7 @@ class TransactionView: ViewDefault {
         backgroundColor = .white
         
         self.setUIElements()
-}
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

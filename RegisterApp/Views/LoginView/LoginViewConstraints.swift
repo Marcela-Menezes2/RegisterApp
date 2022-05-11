@@ -17,10 +17,10 @@ extension LoginView {
         setLoginButton()
         setNextButton()
     }
-
+    
     private func setTitle() {
         contentView.addSubview(titleLabel)
-
+        
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: kTop),
             titleLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: kLeft),
@@ -31,7 +31,7 @@ extension LoginView {
     
     private func setEmailAddress() {
         contentView.addSubview(emailAddressTextField)
-
+        
         NSLayoutConstraint.activate([
             emailAddressTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: kTop),
             emailAddressTextField.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: kLeft),
@@ -42,7 +42,7 @@ extension LoginView {
     
     private func setPassword() {
         contentView.addSubview(passwordTextField)
-
+        
         NSLayoutConstraint.activate([
             passwordTextField.topAnchor.constraint(equalTo: emailAddressTextField.bottomAnchor, constant: kTop),
             passwordTextField.leadingAnchor.constraint(equalTo: emailAddressTextField.leadingAnchor),
@@ -53,7 +53,7 @@ extension LoginView {
     
     private func setLoginButton() {
         contentView.addSubview(loginButton)
-
+        
         NSLayoutConstraint.activate([
             loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: kTop),
             loginButton.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor),
@@ -64,7 +64,7 @@ extension LoginView {
     
     private func setNextButton() {
         contentView.addSubview(registerButton)
-
+        
         NSLayoutConstraint.activate([
             registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: kTop),
             registerButton.leadingAnchor.constraint(equalTo: loginButton.leadingAnchor),

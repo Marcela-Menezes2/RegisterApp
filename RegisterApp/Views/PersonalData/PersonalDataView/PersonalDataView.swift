@@ -10,8 +10,8 @@ import UIKit
 class PersonalDataView: ViewDefault {
     
     // MARK: Closures
-   var onNextTap: (() -> Void)?
-   var onSaveProfile: ((_ personalDataViewModel: PersonalDataViewModel) -> Void)?
+    var onNextTap: (() -> Void)?
+    var onSaveProfile: ((_ personalDataViewModel: PersonalDataViewModel) -> Void)?
     
     
     // MARK: Elements Views
@@ -32,7 +32,7 @@ class PersonalDataView: ViewDefault {
     
     lazy var ageTextField = TextFieldDefault(placeholder: "  Selecione sua idade")
     lazy var agePickerView:ToolbarPickerView = {
-    
+        
         let picker = ToolbarPickerView()
         picker.translatesAutoresizingMaskIntoConstraints = false
         
@@ -111,9 +111,9 @@ class PersonalDataView: ViewDefault {
         let phone = phoneTextField.text ?? String.empty
         
         let personalDataViewModel = PersonalDataViewModel(age: age,
-                                                gender: gender,
-                                                cpf: cpf,
-                                                phone: phone)
+                                                          gender: gender,
+                                                          cpf: cpf,
+                                                          phone: phone)
         
         onSaveProfile?(personalDataViewModel)
     }
@@ -125,15 +125,15 @@ class PersonalDataView: ViewDefault {
         fatalError("init(coder:) has not been implemented")
         
     }
-
-//
-//import SwiftUI
-//import UIViewCanvas
-//
-//struct MyPreview: PreviewProvider {
-//    static var previews: some View {
-//        ViewCanvas(for: PersonalDataView())
-//    }
-//}
-
+    
+    //
+    //import SwiftUI
+    //import UIViewCanvas
+    //
+    //struct MyPreview: PreviewProvider {
+    //    static var previews: some View {
+    //        ViewCanvas(for: PersonalDataView())
+    //    }
+    //}
+    
 }

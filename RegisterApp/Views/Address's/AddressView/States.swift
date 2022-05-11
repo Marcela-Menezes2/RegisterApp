@@ -9,6 +9,6 @@ import Foundation
 
 class States {
     static public let listStates = [ "Selecione seu País", "Brasil", "Colômbia", "Argentina", "Peru", "Venezuela", "Estados Unidos", "Itália", "Portugal", "Alemanha",
-    "Turquia", "Rússia", "África do Sul", "Índia", "Bolivia", "Espanha", "China", "Japão", "Austrália", "Canadá",
-    "Indonésia", "Chile", "França", "Paraguai", "Equador ", "Croácia", "Suiça" ]
+                                     "Turquia", "Rússia", "África do Sul", "Índia", "Bolivia", "Espanha", "China", "Japão", "Austrália", "Canadá",
+                                     "Indonésia", "Chile", "França", "Paraguai", "Equador ", "Croácia", "Suiça" ]
 }

@@ -14,7 +14,7 @@ class LoginView: ViewDefault {
     var onLoginTap: ((_ userViewModel: UserViewModel) -> Void)?
     var onRegisterTap: (() -> Void)?
     var onPasswordWrong: (()->Void)?
-
+    
     // MARK: Visual Elements
     
     lazy var titleLabel = LabelDefault(titleLabel: "Entrar")
@@ -46,7 +46,7 @@ class LoginView: ViewDefault {
         self.passwordTextField.keyboardType = .default
         self.emailAddressTextField.keyboardType = .emailAddress
     }
-
+    
     @objc
     private func registerButtonTap() {
         onRegisterTap?()
@@ -54,12 +54,12 @@ class LoginView: ViewDefault {
     
     @objc
     private func loginButtonTap() {
-//        if !RegExp.checkPasswordComplexity(password: self.passwordTextField.text!, length: 6, patternsToEscape:[], caseSensitivty: true, numericDigits: true, specialCharacter: true) {
-//            onPasswordWrong?()
-//        }
+        //        if !RegExp.checkPasswordComplexity(password: self.passwordTextField.text!, length: 6, patternsToEscape:[], caseSensitivty: true, numericDigits: true, specialCharacter: true) {
+        //            onPasswordWrong?()
+        //        }
         
         let userVidewModel = UserViewModel(model: UserModel(id: 0, email: emailAddressTextField.text ?? String.empty, password: passwordTextField.text ?? String.empty))
-
+        
         onLoginTap?(userVidewModel)
     }
     

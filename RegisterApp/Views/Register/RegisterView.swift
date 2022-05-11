@@ -12,7 +12,7 @@ class RegisterView: ViewDefault {
     // MARK: Closures
     var onRegisterTap: ((_ userVideModel: UserViewModel) -> Void)?
     var onLoginTap: (() -> Void)?
-//    var onNextTap: ((_ userViewModel: UserViewModel) -> Void)?
+    //    var onNextTap: ((_ userViewModel: UserViewModel) -> Void)?
     var onPasswordWrong: (()->Void)?
     
     lazy var subTitleLabel = SubLabel(subLabel: "Login data ")

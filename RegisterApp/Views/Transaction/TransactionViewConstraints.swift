@@ -12,21 +12,15 @@ extension TransactionView {
         setSubTitle()
         setIconButton()
         setSegmentControl()
-        setBlueView()
-        setPinkView()
-        setCircleImage()
-        setSubLabel()
-        setUserLabel()
-        setSetaImage()
-        setTextTitle()
-        setDescriptLabel()
-}
+        setIputView()
+        setOutputView()
+    }
     
     private func setIconButton() {
         self.addSubview(iconButton)
         
         NSLayoutConstraint.activate([
-            iconButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+            iconButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 60),
             iconButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
             iconButton.heightAnchor.constraint(equalToConstant: 40),
             iconButton.widthAnchor.constraint(equalToConstant: 40)
@@ -37,7 +31,7 @@ extension TransactionView {
         self.addSubview(titleLabel)
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 80),
+            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
             titleLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15)
         ])
     }
@@ -54,93 +48,27 @@ extension TransactionView {
         ])
     }
     
-    private func setBlueView() {
-        self.addSubview(blueView)
+    private func setIputView() {
+        self.addSubview(inputsView)
         
         NSLayoutConstraint.activate([
-            blueView.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor, constant: 20),
-            blueView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16),
-            blueView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -220),
-            blueView.heightAnchor.constraint(equalToConstant: 140),
-            blueView.widthAnchor.constraint(equalToConstant: 171)
+            inputsView.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor, constant: 30),
+            inputsView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
+            inputsView.heightAnchor.constraint(equalToConstant: 124),
+            inputsView.widthAnchor.constraint(equalToConstant: 171)
             
         ])
     }
     
-    private func setCircleImage() {
-        self.addSubview(circleImage)
+    private func setOutputView() {
+        self.addSubview(outputsView)
         
         NSLayoutConstraint.activate([
-            circleImage.topAnchor.constraint(equalTo: self.blueView.topAnchor, constant: 15),
-            circleImage.leftAnchor.constraint(equalTo: self.blueView.leftAnchor, constant: 16),
-       //     circleImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -220),
-            circleImage.heightAnchor.constraint(equalToConstant: 35),
-            circleImage.widthAnchor.constraint(equalToConstant: 35)
+            outputsView.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor, constant: 30),
+            outputsView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
+            outputsView.heightAnchor.constraint(equalToConstant: 124),
+            outputsView.widthAnchor.constraint(equalToConstant: 171)
             
         ])
     }
-    
-    private func setSubLabel() {
-        self.addSubview(subTitle)
-        
-        NSLayoutConstraint.activate([
-            subTitle.topAnchor.constraint(equalTo: self.circleImage.bottomAnchor, constant: 10),
-            subTitle.leftAnchor.constraint(equalTo: self.circleImage.leftAnchor)
-        ])
-    }
-    
-    private func setUserLabel() {
-        self.addSubview(descriptionLabel)
-        
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalTo: self.subTitle.topAnchor, constant: 30),
-            descriptionLabel.leftAnchor.constraint(equalTo: self.circleImage.leftAnchor)
-        ])
-    }
-    
-    private func setPinkView() {
-        self.addSubview(pinkView)
-
-        NSLayoutConstraint.activate([
-            pinkView.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor, constant: 20),
-           // pinkView.leftAnchor.constraint(equalTo: self.blueView.leftAnchor, constant: 16),
-            pinkView.leadingAnchor.constraint(equalTo: self.blueView.trailingAnchor, constant: 26),
-            pinkView.heightAnchor.constraint(equalToConstant: 140),
-            pinkView.widthAnchor.constraint(equalToConstant: 171)
-
-        ])
-    }
-    
-    private func setSetaImage() {
-        self.addSubview(setaImage)
-        
-        NSLayoutConstraint.activate([
-            setaImage.topAnchor.constraint(equalTo: self.pinkView.topAnchor, constant: 15),
-            setaImage.leftAnchor.constraint(equalTo: self.pinkView.leftAnchor, constant: 16),
-       //     circleImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -220),
-            setaImage.heightAnchor.constraint(equalToConstant: 35),
-            setaImage.widthAnchor.constraint(equalToConstant: 35)
-            
-        ])
-    }
-    
-    
-    private func setTextTitle() {
-        self.addSubview(textTitle)
-        
-        NSLayoutConstraint.activate([
-            textTitle.topAnchor.constraint(equalTo: self.setaImage.bottomAnchor, constant: 10),
-            textTitle.leftAnchor.constraint(equalTo: self.setaImage.leftAnchor)
-        ])
-    }
-    
-    private func setDescriptLabel() {
-        self.addSubview(descriptLabel)
-        
-        NSLayoutConstraint.activate([
-            descriptLabel.topAnchor.constraint(equalTo: self.subTitle.topAnchor, constant: 30),
-            descriptLabel.leftAnchor.constraint(equalTo: self.setaImage.leftAnchor)
-        ])
-    }
-    
 }

@@ -42,4 +42,17 @@ extension UIColor {
     static var greenColor: UIColor {
         return UIColor(named: "greenColor")!
     }
+    
+    static var tabbarIconColor: UIColor {
+        return UIColor(named: "tabbarIconColor")!
+    }
+    
+    static var inputsColor: UIColor {
+        return UIColor(named: "Input")!
+    }
+    
+    static var outputsColor: UIColor {
+        return UIColor(named: "Output")!
+   
+    }
 }

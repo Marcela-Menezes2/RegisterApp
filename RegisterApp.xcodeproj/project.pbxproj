@@ -51,6 +51,7 @@
 		ADC04031281C55710058B0AF /* ResumeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC04030281C55710058B0AF /* ResumeCoordinator.swift */; };
 		ADCA6CA12821A97C003A2967 /* PersonalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA6CA02821A97C003A2967 /* PersonalDataModel.swift */; };
 		ADCA6CA32821A9DE003A2967 /* PersonalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA6CA22821A9DE003A2967 /* PersonalDataViewModel.swift */; };
+		ADCABCAF282C1F72000FFE5C /* ViewImputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCABCAE282C1F72000FFE5C /* ViewImputOutput.swift */; };
 		ADD340A52829449600DB09C8 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A42829449600DB09C8 /* TransactionView.swift */; };
 		ADD340A728294EE600DB09C8 /* TransactionViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD340A628294EE600DB09C8 /* TransactionViewConstraints.swift */; };
 		ADE67210281AD597009FF144 /* CEPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6720F281AD597009FF144 /* CEPModel.swift */; };
@@ -126,6 +127,7 @@
 		ADC04030281C55710058B0AF /* ResumeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeCoordinator.swift; sourceTree = "<group>"; };
 		ADCA6CA02821A97C003A2967 /* PersonalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataModel.swift; sourceTree = "<group>"; };
 		ADCA6CA22821A9DE003A2967 /* PersonalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewModel.swift; sourceTree = "<group>"; };
+		ADCABCAE282C1F72000FFE5C /* ViewImputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImputOutput.swift; sourceTree = "<group>"; };
 		ADD340A42829449600DB09C8 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		ADD340A628294EE600DB09C8 /* TransactionViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewConstraints.swift; sourceTree = "<group>"; };
 		ADE6720F281AD597009FF144 /* CEPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPModel.swift; sourceTree = "<group>"; };
@@ -269,14 +271,14 @@
 		AD424AAC280DCE4700555A6E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD87DB0C282AAF78001D8C7F /* TabBar */,
-				AD87DB09282AAE84001D8C7F /* Category */,
-				ADFA5C3C282556D2008DE502 /* Transaction */,
 				AD48F26F281C539E0071947B /* LoginViewController */,
-				AD3797422816E4D3004420E3 /* ResumeViewController */,
-				AD3797372816C448004420E3 /* AddressVewController */,
-				AD3797362816C41B004420E3 /* PersonalDataVC */,
 				ADFED5C82810710100F3BDFA /* Register */,
+				AD3797362816C41B004420E3 /* PersonalDataVC */,
+				AD3797372816C448004420E3 /* AddressVewController */,
+				AD3797422816E4D3004420E3 /* ResumeViewController */,
+				AD87DB0C282AAF78001D8C7F /* TabBar */,
+				ADFA5C3C282556D2008DE502 /* Transaction */,
+				AD87DB09282AAE84001D8C7F /* Category */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -419,12 +421,12 @@
 		ADE6721F281B0FC6009FF144 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ADD340A32829446200DB09C8 /* Transaction */,
 				AD48F26A281C51230071947B /* LoginView */,
 				AD424AA9280DCD4200555A6E /* Register */,
 				ADFED5D428108EB500F3BDFA /* PersonalData */,
 				AD03D7662814742B0079E249 /* Address's */,
 				AD37973D2816E369004420E3 /* ResumeView */,
+				ADD340A32829446200DB09C8 /* Transaction */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -457,6 +459,7 @@
 				ADFA6108280EEFD50008EBA7 /* ButtomDefault.swift */,
 				AD4EEAC528185F510088CF68 /* ToolBarPicketView.swift */,
 				ADF7B4242819977C00B0B31D /* ViewControllerDefault.swift */,
+				ADCABCAE282C1F72000FFE5C /* ViewImputOutput.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -483,15 +486,15 @@
 		ADFED5CA281074F600F3BDFA /* coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				AD87DB07282AADD9001D8C7F /* CategoryCoordinator.swift */,
 				ADFED5CB2810754700F3BDFA /* Coordinator.swift */,
 				AD48F272281C54280071947B /* LoginCoordinator.swift */,
 				ADFED5CD2810757800F3BDFA /* RegisterCoordinator.swift */,
 				AD4EEAB9281842DA0088CF68 /* PersonalDataCoordinator.swift */,
 				ADFED5CF28107B6500F3BDFA /* AddressCoordinator.swift */,
 				ADC04030281C55710058B0AF /* ResumeCoordinator.swift */,
-				ADFA5C3A28255680008DE502 /* TransactionCoordinator.swift */,
 				AD87DB0F282AB197001D8C7F /* TabBarCoordinator.swift */,
+				ADFA5C3A28255680008DE502 /* TransactionCoordinator.swift */,
+				AD87DB07282AADD9001D8C7F /* CategoryCoordinator.swift */,
 			);
 			path = coordinator;
 			sourceTree = "<group>";
@@ -632,6 +635,7 @@
 				AD3797392816C4BB004420E3 /* AddressConstraints.swift in Sources */,
 				AD4EEACB281861500088CF68 /* PersonalDataExtensions.swift in Sources */,
 				AD48F26C281C513C0071947B /* LoginView.swift in Sources */,
+				ADCABCAF282C1F72000FFE5C /* ViewImputOutput.swift in Sources */,
 				AD87DB0E282AAF95001D8C7F /* HomeTabBarController.swift in Sources */,
 				ADE67221281B1962009FF144 /* AddressExtensions.swift in Sources */,
 				ADFED5CC2810754700F3BDFA /* Coordinator.swift in Sources */,
