@@ -26,7 +26,7 @@ class ResumeView: ViewDefault {
     var labelCity = userLabel(idadeLabel: String.empty)
     var labelUF = userLabel(idadeLabel: String.empty)
     
-    var buttonHome = ButtonDefault(setTitle: "Home")
+    var buttonHome = ButtonDefault(title: "Home")
     
     init(withCoordinatorViewModel coordinatorViewModel: CoordinatorViewModel) {
         self.coordinatorViewModel = coordinatorViewModel

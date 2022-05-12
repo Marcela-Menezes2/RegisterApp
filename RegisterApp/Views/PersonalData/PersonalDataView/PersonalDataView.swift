@@ -24,7 +24,7 @@ class PersonalDataView: ViewDefault {
         return tf
     }()
     lazy var nextButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Salvar")
+        let bt = ButtonDefault(title: "Salvar")
         bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(saveProfileTap), for: .touchUpInside)
         return bt

@@ -20,7 +20,7 @@ class RegisterView: ViewDefault {
     lazy var emailTextField = TextFieldDefault(placeholder: "  Email ")
     lazy var passwordTextField = TextFieldDefault(placeholder: "  Password ", isSecureTextEntry: true)
     lazy var nextButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Salvar")
+        let bt = ButtonDefault(title: "Salvar")
         bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(nextButtonTap), for: .touchUpInside)
         return bt

@@ -17,19 +17,19 @@ class LoginView: ViewDefault {
     
     // MARK: Visual Elements
     
-    lazy var titleLabel = LabelDefault(titleLabel: "Entrar")
+    lazy var titleLabel = LabelDefaultt(titleLabel: "Entrar")
     
     lazy var emailAddressTextField = TextFieldDefault(placeholder: "Endereço de Email")
     lazy var passwordTextField = TextFieldDefault(placeholder: "Digite sua senha ", isSecureTextEntry: true)
     
     lazy var loginButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Entrar")
+        let bt = ButtonDefault(title: "Entrar")
         bt.addTarget(self, action: #selector(loginButtonTap), for: .touchUpInside)
         return bt
     }()
     
     lazy var registerButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Registrar")
+        let bt = ButtonDefault(title: "Registrar")
         bt.addTarget(self, action: #selector(registerButtonTap), for: .touchUpInside)
         return bt
     }()

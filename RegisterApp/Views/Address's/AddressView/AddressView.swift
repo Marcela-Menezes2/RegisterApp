@@ -23,7 +23,7 @@ class AddressView: ViewDefault {
     lazy var cepLabel = CepLabel(cepLabel: "CEP")
     lazy var cepTextField = CPFTextFieldDefault(placeholder: "informe seu CEP", keyboardType: .numberPad)
     lazy var buscaCEPButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "🔍")
+        let bt = ButtonDefault(title: "🔍")
         bt.addTarget(self, action: #selector(buscaCEPButtonTAP), for: .touchUpInside)
         
         return bt
@@ -61,7 +61,7 @@ class AddressView: ViewDefault {
     }()
     
     lazy var nextButton: ButtonDefault = {
-        let bt = ButtonDefault(setTitle: "Próximo")
+        let bt = ButtonDefault(title: "Próximo")
         bt.backgroundColor = .buttonBackgroundColor
         bt.addTarget(self, action: #selector(saveProfileTap), for: .touchUpInside)
         return bt

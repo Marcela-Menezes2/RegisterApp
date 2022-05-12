@@ -5,7 +5,6 @@
 //  Created by Marcela Menezes Silva on 06/05/22.
 //
 
-import Foundation
 import UIKit
 
 class TransactionCoordinator: Coordinator {
@@ -18,7 +17,6 @@ class TransactionCoordinator: Coordinator {
         
         return view
     }()
-    
     
     init(navigationController: UINavigationController,
          coordinatorViewModel: CoordinatorViewModel) {
